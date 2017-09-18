@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/css.css" />
+		<link rel="stylesheet" type="text/css" href="../css/go_shop.css" />
+	</head>
+
+	<body>
+	
+		<div class="header"></div>
+		<div id="content">
+			<div class="top_white"></div>
+			<div class="main_con">
+				<!-- 左边-->
+				<div class="con_left">
+					<!-- 第一列-->
+					<div id="con_left_topList">
+						<h2>分类:</h2>
+						<ul>
+							<li>
+								<a href="#"><span>臻选蛋糕</span></a>
+							</li>
+							<li>
+								<a href="#"><span>巧克力蛋糕</span></a>
+							</li>
+							<li>
+								<a href="#"><span>鲜花蛋糕</span></a>
+							</li>
+							<li>
+								<a href="#"><span>裸蛋糕</span></a>
+							</li>
+							<li>
+								<a href="#"><span>奶油水果蛋糕</span></a>
+							</li>
+							<li>
+								<a href="#"><span>慕斯蛋糕</span></a>
+							</li>
+							<li>
+								<a href="#"><span>拼接蛋糕</span></a>
+							</li>
+							<li>
+								<a href="#"><span>乳酪蛋糕</span></a>
+							</li>
+							<li>
+								<a href="#"><span>冰淇淋蛋糕</span></a>
+							</li>
+							<li>
+								<a href="#"><span>儿童蛋糕</span></a>
+							</li>
+							<li>
+								<a href="#"><span>蛋糕伴侣</span></a>
+							</li>
+							<li>
+								<a href="#"><span>VIP购卡</span></a>
+							</li>
+						</ul>
+					</div>
+					<!-- 第二列-->
+					<div id="con_left_second">
+						<!-- 第二列列表-->
+						<div id="con_left_secondList">
+							<div id="second_one">
+								<a href="javascript:void(0);" class="default "><em>默认</em></a>
+								<a href="javascript:void(0);" class="price_sort"><em style="margin-left: 6px;">价格<span>&nbsp;&nbsp;&nbsp;</span></em></a>
+								<a href="javascript:void(0);" class="sell-sort "><em style="margin-left: 4px;">销量<span>&nbsp;&nbsp;&nbsp;</span></em></a>
+								<label for="">排序：</label>
+								<select name="orderBy" id="" class="action-orderby">
+									<option value="" selected="">默认</option>
+									<option value="price_high">按价格 从高到低</option>
+									<option value="price_low">按价格 从低到高</option>
+									<option value="week_count">访问周次数</option>
+									<option value="total_count">总访问次数</option>
+									<option value="buy_week_count">周购买次数</option>
+									<option value="buy_all_count">总购买次数</option>
+								</select>
+							</div>
+							<div id="second_two">
+								<a href="javascript:void(0);" class="big"><i>&nbsp;&nbsp;&nbsp;&nbsp;</i>大图</a>
+								<a href="javascript:void(0);" class="list"><em>&nbsp;&nbsp;&nbsp;&nbsp;</em>列表</a>
+							</div>
+							<div id="second_three">
+								<span class="num"><span>1</span>/<span>4</span></span>
+								<span class="arrow"><a href="javascript:void(0);"><i class="left"></i></a>
+									  <a href="javascript:void(0);"><i class="right"></i></a>
+							</span>
+							</div>
+						</div>
+						<!-- 第二列商品展示-->
+						<div id="con_left_sceond_show">
+
+						</div>
+
+						<div class="pageview">
+							<span class="over"><i >‹</i></span>
+							<a href="get_goods" class="flip active">1</a>
+							<a href="get_goods" class="flip">2</a>
+							<a href="get_goods" class="flip">3</a>
+							<a href="get_goods" class="flip">4</a>
+							<a href="get_goods" class="flip next"><i>›</i></a>
+						</div>
+					</div>
+				</div>
+				<!-- 右边-->
+				<div class="con_right"></div>
+
+			</div>
+
+		</div>
+		<div class="footer"></div>
+	</body>
+	<script src="../requirejs/require.js"data-main = "../js/go_shop"></script>
+	
+
+</html>

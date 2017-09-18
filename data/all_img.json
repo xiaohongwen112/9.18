@@ -1,0 +1,15 @@
+{
+	"status":1,
+	"message":"success",
+	"all_img":[
+				 {"src":"../img/goods1.jpg"},
+				 {"src":"../img/good2.jpg"},
+				 {"src":"../img/goods3.jpg"},
+				 {"src":"../img/goods4.jpg"},
+				 {"src":"../img/goods5.jpg"},
+				 {"src":"../img/goods6.jpg"},
+				 {"src":"../img/goods7.jpg"},
+				 {"src":"../img/goods8.jpg"},
+				 {"src":"../img/goods9.jpg"}
+		  ]			
+}

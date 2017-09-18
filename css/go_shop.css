@@ -1,0 +1,301 @@
+/*shop*/
+
+a {
+	color: #666;
+}
+a:hover {
+    color: #dc4f45;
+    cursor: pointer;
+}
+a:hover span{
+    color: #dc4f45;
+}
+
+.top_white {
+	width: 1150px;
+	margin: 0px auto;
+	overflow: hidden;
+	height: 46px;
+	line-height: 46px;
+	border-bottom: 1px solid #e2e5e9;
+	margin-bottom: 25px;
+}
+
+.main_con {
+	width: 1150px;
+	clear: both;
+	margin: 0px auto 0 auto;
+	background: #fff;
+	height: 3000px;
+}
+
+.con_left {
+	overflow: hidden;
+	float: left;
+	width: 934px;
+	background-color: #fff;
+}
+
+.con_right {
+	width: 180px;
+	float: right;
+	background-color: #fff;
+}
+
+.con_left #con_left_topList {
+	border-bottom: 1px solid #ccc;
+	background: #e2e5e9;
+	height: 40px;
+}
+
+.con_left #con_left_topList h2 {
+	font-size: 12px;
+	padding-left: 16px;
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	background: #e2e5e9;
+	display: block;
+}
+
+.con_left #con_left_topList ul {
+	overflow: hidden;
+	background: #e2e5e9;
+}
+
+.con_left #con_left_topList ul li {
+	float: left;
+	padding: 0 10px;
+	height: 40px;
+	line-height: 40px;
+}
+
+.con_left #con_left_topList ul li a {
+	color: #666;
+}
+
+.con_left #con_left_topList ul li:first-child a span {
+	padding-left: 11px;
+}
+
+#con_left_second {
+	overflow: hidden;
+	float: left;
+	padding-bottom: 1px;
+	width: 934px;
+
+	
+}
+
+.con_left #con_left_second #con_left_secondList {
+	margin-bottom: 10px;
+	background: #e2e5e9;
+	padding-top: 8px;
+	height: 30px;
+}
+
+.con_left #second_one {
+	float: left;
+}
+
+.con_left #second_one a {
+	margin-left: 17px;
+	color: #666;
+}
+
+.con_left #second_one span {
+	background: url(../img/ckae_03.png) no-repeat 3px 2px;
+	height: 20px;
+	width: 10px;
+}
+
+.con_left #second_one label {
+	margin-left: 10px;
+}
+
+.con_left #second_two {
+	float: right;
+}
+
+.con_left #second_two i {
+	background: url(../img/kabe.png) no-repeat 0 -2px;
+}
+
+.con_left #second_two em {
+	background: url(../img/ckae_07.png) no-repeat 0 -2px;
+}
+
+.con_left #second_two a {
+	margin-right: 7px;
+}
+
+.con_left #second_three {
+	float: right;
+}
+
+.con_left #second_three i {
+	float: left;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #dddddd;
+	color: #3a68cb;
+	background: #f9f9f9;
+	display: block;
+}
+
+.con_left #second_three i.left {
+	background: #fff url(../img/ckae_10.png) no-repeat 6px 5px;
+}
+
+.con_left #second_three i.right {
+	background: #fff url(../img/ckae_12.png) no-repeat 6px 5px;
+}
+
+.con_left #second_three span.num {
+	margin: 2px 5px 0 0;
+	display: block;
+	float: left;
+}
+
+.con_left #second_three span.arrow {
+	width: 80px;
+	height: 20px;
+	display: block;
+	float: right;
+}
+.con_left .all_goods{
+	float: left;
+	padding-left: 10px;
+    padding-right: 10px;
+    margin: 0px 33px 3px 33px;
+	border: 2px solid #fff;
+    width: 220px!important;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.con_left .all_goods:hover{
+	    border: 2px solid #999;
+	    transition: border-color .3s ease-in;
+}
+.con_left .all_goods dt{
+	text-align: center;
+}
+.con_left .all_goods dd a.maxlinkname{
+	font-size: 14px;
+	 display: block;
+    padding: 11px 0 0 0;
+}
+.con_left .all_goods dd .goods_word{
+	max-height: 40px;
+	height: 40px;
+}
+.con_left .all_goods dd span{
+    color: #dc4f45;
+    font: normal 16px microsoft yahei;
+    display: block;
+        margin: 20px 0 0 0;
+}
+.con_left .all_goods dt{
+	    vertical-align: middle
+}
+.all_goods .goods_img{
+	width: 200px;
+	height: 200px;
+	padding-left: 10px;
+}
+.con_left .all_goods dt .goods_img a{
+	line-height: 198px;
+}
+.con_left .all_goods dt .goods_img img{
+	max-height: 200px;
+	max-width: 200px;
+	line-height: 198px;
+	text-align: center;
+	 vertical-align: middle
+}
+.con_left .all_goods .minus,
+.con_left .all_goods .add{
+	display: inline-block;
+    width: 20px;
+    height: 21px;
+    overflow: hidden;
+    vertical-align: middle;
+    border: 1px solid #a9a9a9;
+    text-align: center;
+    font: 14px/22px simsun, serif;
+}
+.con_left .all_goods .minus:hover,
+.con_left .all_goods .add:hover{
+    background-color: #666666;
+    color: white;
+    border-color: #666666;
+}
+.con_left .all_goods .input_num{
+	width: 30px;
+    height: 21px;
+    line-height: 21px;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #a9a9a9;
+    text-align: center;
+}
+.con_left .all_goods dd b{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    display: block;
+    float: left;
+}
+
+.con_left .all_goods dd .shop_cart{
+	display: inline-block;
+    white-space: nowrap;
+    vertical-align: middle;
+    margin-left: 15px;
+}
+.con_left .all_goods dd a.shop_cart>span>span{
+	font-size: 12px;
+	margin-top:30px ;
+	height: 18px;
+    line-height: 18px;
+    border: 0;
+    width: 72px;
+    background: #e2e5e9;
+    color: #333;
+    padding-left:15px ;
+}
+.con_left .all_goods dd a.shop_cart>span>span:hover{
+	    background: #ebd8c7;
+}
+.pageview{
+	    margin: 10px 0;
+    text-align: right;
+    line-height: 20px;
+    font-size: 12px;
+    letter-spacing: -3px;
+}
+.pageview .active {
+    background-color: #a56a4a;
+    border-color: #a56a4a;
+}
+.pageview .flip {
+    border: 1px solid #dddddd;
+    color: #666666;
+    padding: 1px 8px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    width: auto;
+    letter-spacing: 0;
+}
+.pageview .prev, .pageview .next {
+    padding: 0 5px;
+}
+.pageview .over{
+	color: #cccccc;
+    cursor: not-allowed;
+    background-color: #f3f3f3;
+}

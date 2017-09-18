@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<div id="signupin_tags" class="signupin-tags clearfix">
+			<ul>
+				<li class="active">
+					<a href="/passport-login?mini_passport=1">登录</a>
+				</li>
+				<li>
+					<a href="/passport-signup?mini_passport=1">注册</a>
+				</li>
+			</ul>
+		</div>
+		<div id="mini_signin" class="signupin-content mini-signin" style="height: 392px;">
+			<form action="/passport-post_login" method="post">
+				<ul>
+					<li class="form-item">
+						<label for="" class="form-label">登录帐号：</label><span class="form-act"><input class="x-input action-account-check" type="text" autocomplete="off" name="uname" id="dom_el_76b2000" value="" placeholder="用户名/邮箱地址/手机号" vtype="required" data-caution="请填写登录帐号" autofocus="autofocus"></span></li>
+					<li class="form-item"><label for="" class="form-label">密码：</label><span class="form-act"><input class="x-input" type="password" name="password" id="dom_el_76b2001" placeholder="填写密码" vtype="required" data-caution="请填写密码" oncontextmenu="return false;" onpaste="return false;"></span></li>
+					<li class="form-item action-verifycode hide">
+						<label for="" class="form-label">验证码：</label>
+						<span class="form-act">
+        <input class="x-input verify-input" type="text" name="verifycode" placeholder="填写验证码" data-caution="请正确填写验证码" id="dom_el_76b2002" maxlength="4" autocomplete="off" vtype="required&amp;&amp;alphaint"> <img id="verify-code" src="/index-gen_vcode-b2c-4" alt="验证码" title="点击更换验证码" class="verify-code auto-change-verify-handle"> <a id="verify-change" href="/index-gen_vcode-b2c-4" class="verify-code auto-change-verify-handle">看不清楚?换一个</a>      </span>
+					</li>
+					<li class="form-item action-need-verify" style="display:none;">
+						<label for="" class="form-label">验证码：</label>
+						<span class="form-act">
+        <input class="x-input verify-input" type="text" name="mobileVcode" id="dom_el_76b2003" placeholder="填写验证码"> <a href="/passport-send_vcode_sms" class="btn btn-caution action-get-verifycode"><span><span>获取短信验证码</span></span>
+						</a>
+						</span>
+					</li>
+					<li class="form-item">
+						<label for="" class="form-label"></label>
+						<span class="form-act">
+        <input type="checkbox" name="is_remember" id="for_remember" class="x-check action-remember-account" checked="checked">
+        <label for="for_remember" class="form-sub-label">记住帐号</label>
+        <input type="checkbox" name="site_autologin" id="for_auto_signin" class="x-check action-auto-signin">
+        <label for="for_auto_signin" class="form-sub-label">两周内自动登录</label>
+      </span>
+					</li>
+					<li class="form-item-normal">
+						<label for="" class="form-label"></label>
+						<span class="form-act">
+        <button type="submit" class="btn btn-major btn-big" rel="_request"><span><span>登　录</span></span>
+						</button>
+						<a href="/passport-lost" target="_top">忘记密码？</a>
+						</span>
+					</li>
+				</ul>
+			</form>
+			<div id="trust_signin" class="trust-signin">
+				<script type="text/javascript" charset="utf-8" src="http://www.ecopen.cn/connect/logincode?appid=1175343331&amp;v=1.0"></script><iframe id="denglu_login_1504784125037" name="denglu_login_1504784125037" src="//www.ecopen.cn/connect/login?appid=1175343331&amp;domain=www.micamika.com&amp;widget=5&amp;v=1.0" allowtransparency="true" scrolling="no" frameborder="0" width="328" height="126"></iframe> </div>
+
+		</div>
+		<script>
+			Module = new Module('mini', ['signin']);
+			var modname = 'mini.signin';
+			var showVcode = 0;
+
+			if((Browser.ie6 || Browser.ie7) && module.getElement('form').getOuterSize().y > module.getSize().y - module.getPatch('border', 'padding').y) {
+				module.setStyle('position', 'relative');
+			}
+		</script>
+
+		<script>
+			var Query = {
+				send: function(url, element, data, fn) {
+					new Request({
+						url: url,
+						link: 'cancel',
+						onSuccess: function(rs) {
+							var tips = element.retrieve('tips_instance', new formTips({
+								target: element,
+								where: 'after',
+								single: true,
+								store: true,
+								autohide: false,
+								destroy: true
+							})).hide();
+							if(rs) {
+								try {
+									rs = JSON.decode(rs);
+								} catch(e) {}
+								if(rs.error) {
+									if(typeof rs.error === 'string') tips.show(rs.error, {
+										type: 'error'
+									});
+								} else {
+									if(typeof rs.success === 'string') tips.show(rs.success, {
+										type: 'success',
+										autohide: 3
+									});
+								}
+								fn && fn.call(this, rs);
+							}
+						}
+					}).post(data);
+				}
+			};
+
+			function redirect(url) {
+				if(url) top.location.href = url;
+			}
+
+			function sendVerify(el, data) {
+				var url = el.href;
+				var textCont = el.getElement('span span');
+				el.addClass('disabled');
+				textCont.innerHTML = el.get('text') + '(<i>0</i>)';
+				var cd = new countdown(textCont.getElement('i'), {
+					start: 120,
+					secondOnly: true,
+					callback: function(e) {
+						el.removeClass('disabled');
+						textCont.innerHTML = '重发短信码';
+					}
+				});
+				Query.send(url, el, data, function(rs) {
+					if(rs.error) {
+						cd.stop();
+						el.removeClass('disabled');
+						textCont.innerHTML = '重发短信码';
+					}
+				});
+			}
+
+			Module.get(modname).getElement('button[type=submit]').store('_ajax_config', {
+				progress: function(rs) {
+					if(rs.error) {
+						if(showVcode || rs.data && rs.data.needVcode) {
+							Module.element(modname, '.action-verifycode').removeClass('hide');
+							changeCode(Module.element(modname, 'img.auto-change-verify-handle'));
+						}
+						return top.Message.error(rs.error, function() {
+							redirect(rs.redirect);
+						});
+					}
+					if(rs.success) return top.Message.success(rs.success + '<br><b>系统即将跳转到登录前页面</b>', function() {
+						redirect(rs.redirect);
+					});
+					redirect(rs.redirect);
+				}
+			});
+
+			Module.get(modname).addEvents({
+				'change:relay(.action-account-check)': function(e) {
+					if(validatorMap.mobile[1](this, this.value)) {
+						Query.send('/passport-login_ajax_account', this, this.name + '=' + this.value, function(rs) {
+							if(rs.needVerify === 'true') {
+								Module.element(modname, '.action-need-verify').style.display = '';
+								if(showVcode) {
+									Module.element(modname, '.action-verifycode').style.display = 'none';
+								}
+							}
+						});
+					} else {
+						Module.element(modname, '.action-need-verify').style.display = 'none';
+						if(showVcode) {
+							Module.element(modname, '.action-verifycode').style.display = '';
+						}
+					}
+				},
+				'click:relay(.action-get-verifycode)': function(e) {
+					e.preventDefault();
+					var el = Module.element(modname, '.action-account-check');
+					if(this.hasClass('disabled')) return false;
+					sendVerify(this, el.name + '=' + el.value + '&type=activation');
+				}
+			});
+		</script>
+	</body>
+
+</html>
