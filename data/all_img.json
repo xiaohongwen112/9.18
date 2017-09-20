@@ -2,14 +2,14 @@
 	"status":1,
 	"message":"success",
 	"all_img":[
-				 {"src":"../img/goods1.jpg"},
-				 {"src":"../img/good2.jpg"},
-				 {"src":"../img/goods3.jpg"},
-				 {"src":"../img/goods4.jpg"},
-				 {"src":"../img/goods5.jpg"},
-				 {"src":"../img/goods6.jpg"},
-				 {"src":"../img/goods7.jpg"},
-				 {"src":"../img/goods8.jpg"},
-				 {"src":"../img/goods9.jpg"}
+				 {"src":"../img/big1.jpg"},
+				 {"src":"../img/big2.jpg"},
+				 {"src":"../img/big3.jpg"},
+				 {"src":"../img/big4.jpg"},
+				 {"src":"../img/big5.jpg"},
+				 {"src":"../img/big6.jpg"},
+				 {"src":"../img/big7.jpg"},
+				 {"src":"../img/big8.jpg"},
+				 {"src":"../img/big9.jpg"}
 		  ]			
 }

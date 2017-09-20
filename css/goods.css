@@ -17,7 +17,7 @@ img:hover{
 	margin-bottom: 25px;
 }
 #main_content{
-	height: 4000px;
+	min-height: 4250px;
 	width: 1150px;
 	clear: both;
 	margin:0 auto;
@@ -37,10 +37,9 @@ img:hover{
 	}
 #con_right{
 	float: left;
-	margin-left: 80px;
+	margin-left: 100px;
 	width: 520px;
 	height: 600px;
-	box-shadow: 0 0 4px 5px #999;
 	margin-right: 0;
 }
 .product-titles h2{
@@ -56,19 +55,162 @@ img:hover{
 .product_right_detail h3{
 	font: bold 28px microsoft yahei;
 	color: #dc4f45; 
+	margin: 10px 0;
 }  
 a.birthday{
-	display: block;
+	margin-left: 10px;
+	height: 20px;
+	display: inline-block;
 	width: 100px;
-	background: url(../img/);
+	padding-left: 30px;
+	background: url(../img/f4044eb228acf63269a4cff684c8a2aa.jpg) no-repeat 0 -4px;
+	background-size:25px ;
 }
+.product_right_detail em{
+	margin-top: 10px;
+	color: #333333;
+	width: 50px;
+	padding: 5px;
+	display: block;
+	border: 1px solid #cccccc;	
+	border-bottom: 2px solid #fff;
+	border-top: 2px solid #dc4f45;
+	margin-bottom: -1px;
+	position: relative;
+}
+.product_right_detail .give_gift{
+	border: 1px solid #cccccc;	
+	padding: 5px;
+}
+.product_right_detail .give_gift b{
+	display: inline-block;
+	text-align: center;
+	width:50px ;
+	background-color: #dc4f45;
+	margin-right: 5px;
+	line-height: 20px;
+	color: #fff;
+}
+.product_right_detail span.bg_gray,
+.product_right_detail span.bg_gray_right{
+	margin: 8px 0;
+	padding: 4px 0;
+	display:inline-block;
+    background-color: #e2e5e9;
+    padding-left: 5px;
+    min-width: 70px;
+    text-align: right;
+}
+.product_right_detail span.bg_gray_right{
+	margin-left: 150px;
+}
+.product_right_detail span.bg_gray_gg{
+	float: left;
+	margin: 8px 0;
+	padding: 4px 0;
+	display:inline-block;
+    background-color: #e2e5e9;
+    padding-left: 5px;
+    min-width: 40px;
+    text-align: right;
+}
+.product_right_detail a.bg_gray_size{
+	border: 0;
+    width: 218px;
+    height: 25px;
+    line-height: 25px;
+    position: relative;
+    float: left;
+    margin: 9px 5px 2px 11px;
+    text-align: left;
+    color: #666;
+    background-color: #f6f6f6;
+    display: block;
+}
+.product_right_detail span.bg_gray_num{
+	float: left;
+	margin: 8px 0;
+	padding: 4px 0;
+	display:block;
+    background-color: #e2e5e9;
+    padding-left: 5px;
+    min-width: 40px;
+    text-align: right;
+}
+#bg_gray_last{
+	width: 500px;
+	float: left;
+}
+
+a.bg_gray_size:hover{
+	background-color: #e2e5e9;
+}
+#three_bnt{
+	margin-top: 10px;
+	width: 520px;
+	float: left;
+}
+#three_bnt span.first_bnt{
+  	background: #fbe7e5;
+    filter: none;
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    padding-right: 0px;
+    width: 163px;
+    height: 36px;
+    color: #dc4f45;
+    line-height: 36px;
+    border: 1px solid #dc4f45;
+    float: left;
+}  
+#three_bnt span.first_bnt:hover{
+	background:#f8d9d6 ;
+}
+#three_bnt span.sce_bnt{
+	margin-left: 20px;
+	float: left;
+	height: 38px;
+    line-height: 38px;
+    width: 113px;
+    font-size: 16px;
+    color: #fff;
+    padding-left: 50px;
+    background: #dc4f45 url(../img/ico.png) no-repeat 20px -138px;
+    border: 0;
+    display: block;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+}
+#three_bnt span.sce_bnt:hover{
+	opacity: .7;
+}
+#three_bnt span.thi_bnt{
+	margin-right: 0;
+    padding: 3px 5px;
+    border: 1px solid white;
+    border-top-width: 0;
+}
+
 #main_con_bo{
 	clear: both;
 	width: 934px;
-	height: 100px;
+	height: 36px;
+	background: #fff;
+	margin-bottom: 20px;
+}
+.go_top_top{
+	position: fixed;
+	top:0;
+	z-index: 100;
+}
+#product_detail{
+	overflow: hidden;
 }
 #main_con_bo ul {
-	margin: 10px 3px;
+	margin: 0px 2px 20px 0; 
     border: 1px #ccc solid;
     height: 34px;
     border-top: 2px #999 solid;
@@ -85,6 +227,20 @@ a.birthday{
     color: #000;
     box-sizing: content-box;
 }
+#main_con_bo ul li .top_red{
+	margin:-5px 2px 0 2px;
+	border-right: 1px #ccc solid;
+	border-left: 1px #ccc solid;
+	border-bottom:none;
+	background:#fff;
+	border-top:#dc4f45 solid 3px;
+}
+#five_list{
+	clear: both;
+	width: 934px;
+	height: 100px;
+}
+
 #proto_img{
 	background: url(../img/big1.jpg) no-repeat;
 	width: 500px;
@@ -113,7 +269,7 @@ a.birthday{
 	left: 510px;
 	display: none;
 	border:1px solid #666 ;
-
+	z-index: 100;
 	background-size:cover ;
 }
 #big_img img{
@@ -127,16 +283,14 @@ a.birthday{
 	height: 120px;
 	width: 502px;
 	float: left;
-	overflow: hidden;
 }
 #show_many_img ul{
 	width: 1500px;
 	position: absolute;
-	
 }
 #show_many_img ul li{
 	float: left;
-	margin: 2px 5px;
+	margin: 2px 4px;
 	height: 118px;
 	background: #f3eeeb;
 
@@ -217,4 +371,81 @@ a.birthday{
 }
 #type_tab_5 p.kong{
 	margin: 20px 0;
+}
+#bg_gray_last .minus,
+#bg_gray_last .add{
+	display: inline-block;
+    width: 24px;
+    color: #666;
+    height: 21px;
+    overflow: hidden;
+    vertical-align: middle;
+    border: 1px solid #a9a9a9;
+    text-align: center;
+    font: 14px/22px simsun, serif;
+}
+#bg_gray_last .minus:hover,
+#bg_gray_last .add:hover{
+    background-color: #666666;
+    color: white;
+    border-color: #666666;
+}
+#bg_gray_last .minus{
+	margin-left: 10px;
+}
+#bg_gray_last .input_num{
+	width: 37px;
+    height: 21px;
+    line-height: 21px;
+    padding: 0;
+    vertical-align: middle;
+    border-color: #a9a9a9;
+    text-align: center;
+    margin: 9px -5px;
+    border: none;
+    border: 1px #666 solid;
+}
+#goods_next,#goods_prov{
+	height: 117px;
+    line-height: 117px;
+    position: absolute;
+    top: 0;
+    margin-top: 5px;
+    width: 16px;
+    background-color: #eeeeee;
+    line-height: 64px;
+    text-align: center;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+}
+#goods_prov{
+	left: 0;
+}
+#goods_next{
+	right: 0;
+}
+#goods_next a,#goods_prov a {
+    color: #666666;
+    font-size: 18px;
+    height: 12px;
+    width: 12px;
+    display: block;
+}
+#goods_next a{
+	 background: url(../img/lfjt.png) no-repeat;
+	     margin: 47px 0 0 4px;
+}
+#goods_prov a{
+	 background: url(../img/jt2.png) no-repeat;
+	     margin: 47px 0 0 4px;
+}
+   
+#show_many_img_chi{
+	overflow: hidden;
+	position: relative;
+	margin-left:15px;
+	height: 122px;
+	width: 465px;
 }

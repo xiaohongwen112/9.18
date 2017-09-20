@@ -10,6 +10,10 @@
 	</head>
 
 	<body>
+		<!--<div id="into_login" style="display: none; position: absolute; width: 100%; height: 100%; z-index: 10000;">
+		<iframe src="/xiangmu/html/login.html"  width="99.7%" height="3000px" scrolling="no"></iframe>
+	</div>-->
+		
 		<div class="header"></div>
 		<div id="main_content">
 			<div class="top_white"></div>
@@ -24,17 +28,21 @@
 					</div>
 					<!--触碰变图-->
 					<div id="show_many_img">
-						<ul>
-							<li><img src="../img/goods1.jpg" /></li>
-							<li><img src="../img/good2.jpg" /></li>
-							<li><img src="../img/goods3.jpg" /></li>
-							<li><img src="../img/goods4.jpg" /></li>
-							<li><img src="../img/goods5.jpg" /></li>
-							<li><img src="../img/goods6.jpg" /></li>
-							<li><img src="../img/goods7.jpg" /></li>
-							<li><img src="../img/goods8.jpg" /></li>
-							<li><img src="../img/goods9.jpg" /></li>
-						</ul>
+						<div id="goods_prov"><a></a></div>
+						<div id="show_many_img_chi">
+							<ul id="show_many_img_go">
+								<li><img src="../img/goods1.jpg" /></li>
+								<li><img src="../img/good2.jpg" /></li>
+								<li><img src="../img/goods3.jpg" /></li>
+								<li><img src="../img/goods4.jpg" /></li>
+								<li><img src="../img/goods5.jpg" /></li>
+								<li><img src="../img/goods6.jpg" /></li>
+								<li><img src="../img/goods7.jpg" /></li>
+								<li><img src="../img/goods8.jpg" /></li>
+								<li><img src="../img/goods9.jpg" /></li>
+							</ul>
+						</div>
+						<div id="goods_next"><a></a></div>
 					</div>
 
 				</div>
@@ -45,432 +53,427 @@
 					</div>
 					<div class="product_right_detail">
 						<h3>￥317.00</h3>
-						<span>赠品</span>：<a class="birthday">生日牌</a><br />
+						<span>赠&nbsp;&nbsp;品</span>：
+						<a class="birthday">生日牌</a><br />
 						<em>订单促销</em>
-						<div class="give_gigt"><b>送赠品</b>赠送巧克力生日快乐牌</div>
-						<span class="bg_gray">商品货号</span>M717020
-						<span class="bg_gray">品牌:</span>米卡米卡<br />
-						<span class="bg_gray">规格:</span><span>2磅(仅北京配送)</span><span>3磅(仅北京配送)</span><span>4磅(请提前5小时订购)</span><br />
-						<span class="bg_gray">数量:</span>
-						<a href='avascript:void(0);' class='minus'>-</a>
-						<input type='text' min='1'max='10995' size='2' name='goods[num]' class='input_num' value='1'>
-						<a href='javascript:void(0);'class='add'>+</a>
+						<div class="give_gift"><b>送赠品</b>赠送巧克力生日快乐牌</div>
+						<span class="bg_gray">商品货号:&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;M717020
+						<span class="bg_gray_right">品牌:&nbsp;&nbsp;</span>米卡米卡<br />
+						<span class="bg_gray_gg">规格:&nbsp;&nbsp;</span>
+						<a class="bg_gray_size">&nbsp;2磅&nbsp;(仅北京配送)</a>
+						<a class="bg_gray_size">&nbsp;3磅&nbsp;(仅北京配送)</a>
+						<a class="bg_gray_size">&nbsp;4磅&nbsp;(请提前5小时订购)</a><br />
+						<div id="bg_gray_last"><span class="bg_gray_num">数量:&nbsp;&nbsp;</span>
+							<a href='avascript:void(0);' class='minus'>-</a>
+							<input type='text' min='1' max='10995' size='2' name='goods[num]' class='input_num' value='1'>
+							<a href='javascript:void(0);' class='add'>+</a>
+						</div>
+						<div id="three_bnt"><a href=""><span class="first_bnt">立即购买</span></a><a href=""><span  class="sce_bnt">加入购物车</span></a><a href=""><span class="thi_bnt">扫一扫购买</span></a></div>
 					</div>
 				</div>
 			</div>
 			<div id="main_con_bo">
 				<ul>
 					<li>
-						<a id="go_product_detail">商品详情</a>
+						<a id="go_product_detail" class="click_color">商品详情</a>
 					</li>
 					<li>
-						<a id="go_type_tab_2">订购须知</a>
+						<a id="go_type_tab_2" class="click_color">订购须知</a>
 					</li>
 					<li>
-						<a id="go_type_tab_3">优惠券使用说明</a>
+						<a id="go_type_tab_3" class="click_color">优惠券使用说明</a>
 					</li>
 					<li>
-						<a id="go_type_tab_4">礼金卡使用说明</a>
+						<a id="go_type_tab_4" class="click_color">礼金卡使用说明</a>
 					</li>
 					<li>
-						<a id="go_type_tab_5">配送范围及时间</a>
+						<a id="go_type_tab_5" class="click_color">配送范围及时间</a>
 					</li>
 				</ul>
-		</div>
-		<div id="five_list">
-			<!--商品详情-->
-			<!--第一个子页面-->
-			<div id="product_detail" >
+			</div>
+			<div id="five_list">
+				<!--商品详情-->
+				<!--第一个子页面-->
+				<div id="product_detail">
 
-				<div class="product-attributes">
-					<ul class="clearfix">
-						<li>品牌：米卡米卡</li>
-						<li>所属分类：裸蛋糕</li>
-						<li>口感：清新甜蜜</li>
-						<li>口味：缤纷水果口味</li>
-						<li>甜度：★★★</li>
-						<li>适合人群：吃甜食的人；儿童、老人</li>
-						<li>提前预定：5小时</li>
-						<li>适合场景：生日聚餐，朋友聚会</li>
-						<li>TIPS：含酒</li>
-						<li>商品编号：M717</li>
-					</ul>
-				</div>
-				<div class="detail-content">
-					<div>
-						<div style="width:930px; height:7800px; margin: auto;">
-							<div style=" height:125px; margin:0 auto; text-align:center; display:block;">
-								<p style="margin:auto; padding-top:80px;font-family:'微软雅黑'; font-size:24px; color:#a56a4a; line-height:50px;">BARE CAKE · FERRIS WHEEL&nbsp;</p>
-							</div>
-							<div style=" height:60px; margin:0 auto; text-align:center; display:block;">
-								<p style="margin:auto;font-family: '宋体'; font-size:31px; color:#333333; line-height:60px;">给你甜蜜厚实的满足感</p>
-							</div>
-							<div style=" height:30px; margin:0 auto; text-align:center; display:block;">
-								<p style=" width:90px; height:2px; display:block; text-align:center; background-color:#a56a4a; margin:0 auto;"></p>
-							</div>
-							<div style=" height:30px; margin:0 auto; text-align:center; display:block;">
-								<p style="margin:auto;font-family: '方正兰亭超细黑简体'; font-size:25px; color:#333333; line-height:30px;">裸蛋糕·摩天轮</p>
-							</div>
-							<div style=" height:508px; margin:0 auto; text-align:center; display:block; margin-top:20px;">
-								<img src="../img/45c239f12df49b3bc77f6c09aecd6c10.jpg"/></div>
-							<div style=" height:60px; margin:0 auto; text-align:center; display:block; width:790px;">
-								<p style="margin:auto;font-family: '宋体'; font-size:30px; color:#333333; padding-top:15px; width:790px; height:30px;display:block;text-align:left; ">美好食物，幸福生活</p>
-								<p style="margin:auto;font-family: '微软雅黑'; font-size:14px; color:#a56a4a; width:790px; height:30px; font-weight:bold;text-align:left; padding-top:10px;">Good Food, Happy Life&nbsp;</p>
-							</div>
-							<div style=" height:396px;background-image:url(http://micamika-images.s3.mall.ekaidian.com/07/62/ec/972342adb50774fcc4215494abca355f.jpg?1482733090#w); margin:0 auto; text-align:center; display:block;">
-								<div style=" width:790px; height:274px; margin:0 auto; text-align:center; display:block;">
-									<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:45px; height:16px; width:795px; display:block; text-align:left; ">丰盛的新鲜水果</p>
-									<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:5px;height:16px; width:795px; display:block; text-align:left;">和香甜乳脂奶油堆砌出</p>
-									<p style="margin: auto; padding-top: 5px; height: 16px; width: 795px; display: block; text-align: left;">
-										<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">色彩斑斓如梦幻的摩天轮裸蛋糕</span></font>
-									</p>
-									<p style="margin: auto; padding-top: 5px; height: 16px; width: 795px; text-align: left;">
-										<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">带给你甜蜜厚实的满足感</span></font>
-									</p>
-									<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; margin-top:35px;height:15px;width:795px; display:block; text-align:left;">十多种果汁四溢的新鲜水果</p>
-									<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:5px;height:15px; width:795px; display:block;text-align:left; ">加到9厘米高的摩天轮裸蛋糕里</p>
-									<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:5px;height:15px; width:795px; display:block; text-align:left;">释放出阵阵果香</p>
-									<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666;padding-top:5px;height:15px; width:795px; display:block; text-align:left;">搭配细腻顺滑的新西兰乳脂奶油</p>
-									<p style="margin: auto; padding-top: 5px; height: 15px; width: 795px; display: block; text-align: left;">
-										<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">厚实松软的巧克力蛋糕坯</span></font>
-									</p>
-									<p style="margin: auto; padding-top: 5px; height: 15px; width: 795px; display: block; text-align: left;">
-										<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">绽放出更加浓厚的香醇甜蜜</span></font>
-									</p>
-									<p style="margin: auto; padding-top: 5px; height: 15px; width: 795px; display: block; text-align: left;">
-										<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">带给你大大的满足</span></font>
-									</p>
+					<div class="product-attributes">
+						<ul class="clearfix">
+							<li>品牌：米卡米卡</li>
+							<li>所属分类：裸蛋糕</li>
+							<li>口感：清新甜蜜</li>
+							<li>口味：缤纷水果口味</li>
+							<li>甜度：★★★</li>
+							<li>适合人群：吃甜食的人；儿童、老人</li>
+							<li>提前预定：5小时</li>
+							<li>适合场景：生日聚餐，朋友聚会</li>
+							<li>TIPS：含酒</li>
+							<li>商品编号：M717</li>
+						</ul>
+					</div>
+					<div class="detail-content">
+						<div>
+							<div style="width:930px; height:7800px; margin: auto;">
+								<div style=" height:125px; margin:0 auto; text-align:center; display:block;">
+									<p style="margin:auto; padding-top:80px;font-family:'微软雅黑'; font-size:24px; color:#a56a4a; line-height:50px;">BARE CAKE · FERRIS WHEEL&nbsp;</p>
 								</div>
-							</div>
-							<div style=" height:92px; margin:0 auto; text-align:center; display:block;">
-								<img src="../img/1f30d088854efbe5f3fe35b94e4d301e.jpg"></div>
-							<div style=" height:60px; margin:0 auto; text-align:center; display:block; width:790px;">
-								<p style="margin:auto;font-family: '宋体'; font-size:30px; color:#333333; padding-top:15px; width:790px; height:30px;display:block; text-align:right; ">美好食物，幸福生活</p>
-								<p style="margin:auto;font-family: '微软雅黑'; font-size:14px; color:#a56a4a; width:790px; height:30px; font-weight:bold;text-align:right; padding-top:10px;">Good Food, Happy Life</p>
-							</div>
-							<div style=" height:287px; background-image:url(../img/dbcfea019463ba92eb546f3419881db3.jpg); margin:0 auto; text-align:center; display:block;">
-								<div style=" width:280px; height:300px; margin:0 auto; display:block; float:right;">
-									<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:45px;height:15px; width:270px; display:block; text-align:left;">我们一直在努力，尝试着接近幸福</p>
-									<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:5px;height:15px; width:260px; display:block; text-align:left;">但幸福是什么呢？</p>
-									<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:5px;height:15px; width:260px; display:block; text-align:left;">是清晨热气腾腾的可口早餐</p>
-									<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:5px;height:15px; width:260px; display:block; text-align:left;">给我补充满满的能量</p>
-									<p style="margin: auto; padding-top: 5px; height: 15px; width: 260px; display: block; text-align: left;">
-										<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">是沾染着露水新鲜采摘的娇艳玫瑰花</span></font>
-									</p>
-									<p style="margin: auto; padding-top: 5px; height: 15px; width: 260px; display: block; text-align: left;"><span style="font-size: 15px; color: rgb(102, 102, 102); font-family: 微软雅黑;">带来清香怡人的芬芳</span></p>
-									<p style="margin: auto; padding-top: 5px; height: 15px; width: 260px; display: block; text-align: left;">
-										<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">是夜晚回家照亮前路的那一盏路灯</span></font>
-									</p>
-									<p style="margin: auto; padding-top: 5px; height: 15px; width: 260px; display: block; text-align: left;">
-										<font color="#666666" face="微软雅黑"><span style="font-size: 15px;"></span></font>
-									</p>
-									<p style="margin: auto; padding-top: 5px; height: 15px; width: 260px; text-align: left;">
-										<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">赶走黑暗，让我倍感心安</span></font>
-									</p>
-									<p style="margin: auto; padding-top: 5px; height: 15px; width: 260px; text-align: left;">
-										<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">幸福，就像一架不停旋转的摩天轮</span></font>
-									</p>
-									<p style="margin: auto; padding-top: 5px; height: 15px; width: 260px; text-align: left;">
-										<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">一直就在你身边，随你走走停停</span></font>
-									</p>
-									<p style="margin: auto; padding-top: 5px; height: 15px; width: 260px; text-align: left;">
-										<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">只等待你发现它</span></font>
-									</p>
-									<p style="margin: auto; padding-top: 5px; height: 15px; width: 260px; text-align: left;"><span style="color: rgb(102, 102, 102); font-family: 微软雅黑; font-size: 15px;"><br></span></p>
-									<p style="margin: auto; padding-top: 5px; height: 15px; width: 260px; text-align: left;">
-										<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">这款蛋糕，叫做『摩天轮』</span></font>
-									</p>
-									<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:5px;height:15px; width:260px; display:block; text-align:left;">代表幸福、快乐和满足</p>
-									<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:5px;height:15px; width:260px; display:block; text-align:left;">献给每一个想要幸福快乐的小伙伴</p>
-									<p style="margin: auto; padding-top: 5px; height: 15px; width: 260px; display: block; text-align: left;"></p>
+								<div style=" height:60px; margin:0 auto; text-align:center; display:block;">
+									<p style="margin:auto;font-family: '宋体'; font-size:31px; color:#333333; line-height:60px;">给你甜蜜厚实的满足感</p>
 								</div>
-							</div>
-							<div style=" height:60px; margin:0 auto; text-align:center; display:block; width:790px;">
-								<p style="margin:auto;font-family: '宋体'; font-size:30px; color:#333333; padding-top:15px; width:790px; height:30px;display:block;text-align:left; ">摩天轮</p>
-								<p style="margin:auto;font-family: '微软雅黑'; font-size:14px; color:#a56a4a; width:790px; height:30px; font-weight:bold;text-align:left; padding-top:10px;">FERRIS WHEEL&nbsp;</p>
-							</div>
-							<div style=" background-image: url(../img/de410e8c684ffb98c1b7c1e1d021f3bc.jpg); margin:0 auto; text-align:center; display:block;">
-								<div style=" width:790px; height:274px; margin:0 auto; text-align:center; display:block;">
-									<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:45px; height:15px; width:790px; display:block; text-align:left; ">饱满缤纷的丰盛水果</p>
-									<p style="margin: auto; padding-top: 5px; height: 15px; width: 795px; text-align: left;">
-										<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">融入香甜顺滑的新鲜乳脂奶油</span></font>
-									</p>
-									<p style="margin: auto; padding-top: 5px; height: 15px; width: 795px; text-align: left;">
-										<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">搭配厚厚的巧克力蛋糕坯</span></font>
-									</p>
-									<div style="text-align: left;"><br></div>
-									<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:30px;height:15px; width:795px; display:block; text-align:left;">一口咬下去</p>
-									<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; margin-top:5px;height:15px;width:795px; display:block; text-align:left;">甜蜜多汁、乳香四溢</p>
-									<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; margin-top:5px;height:15px;width:795px; display:block; text-align:left;">带给你幸福甜蜜的充实满足感</p>
+								<div style=" height:30px; margin:0 auto; text-align:center; display:block;">
+									<p style=" width:90px; height:2px; display:block; text-align:center; background-color:#a56a4a; margin:0 auto;"></p>
 								</div>
-							</div>
-							<div style=" height:60px; margin:0 auto; text-align:center; display:block; width:790px; margin-top:30px;">
-								<p style="margin:auto;font-family: '宋体'; font-size:30px; color:#333333; padding-top:15px; width:790px; height:30px;display:block; text-align:right; ">新西兰牧场 &nbsp;乳脂奶油</p>
-								<p style="margin:auto;font-family: '微软雅黑'; font-size:14px; color:#a56a4a; width:790px; height:30px; font-weight:bold;text-align:right; padding-top:10px;">New Zealand Ranch &nbsp; &nbsp; Dairy Cream&nbsp;</p>
-							</div>
-							<div style=" height:246px; background-image:url(../img/e9ade27e9af84aa1a7c95d095889525b.jpg); margin:0 auto; text-align:center; display:block;">
-								<div style=" width:280px; height:300px; margin:0 auto; display:block; float:right; margin-top:30px;">
-									<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:45px;height:15px; width:790px; display:block; text-align:left; ">100%新西兰乳脂奶油</p>
-									<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666;padding-top:5px;height:15px; width:795px; display:block; text-align:left;">来自新西兰牧草饲养的乳牛孕育的乳脂奶油</p>
-									<p style="margin: auto; padding-top: 5px; height: 15px; width: 795px; display: block; text-align: left;">
-										<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">营养丰富 &nbsp;质地柔软 &nbsp;含脂量低</span></font>
-									</p>
-									<p style="margin: auto; padding-top: 5px; height: 15px; width: 795px; display: block; text-align: left;">
-										<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">更健康美味</span></font>
-									</p>
-									<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:30px;height:15px; width:795px; display:block; text-align:left;">淡淡的黄色是奶牛食用</p>
-									<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; margin-top:5px;height:15px;width:795px; display:block; text-align:left;">含有丰富胡萝卜素的天然牧草的特征</p>
-									<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; margin-top:5px;height:15px;width:795px; display:block; text-align:left;">更易被人体吸收</p>
-									<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; margin-top:5px;height:15px;width:795px; display:block; text-align:left;">口感细腻顺滑 &nbsp;入口即化</p>
+								<div style=" height:30px; margin:0 auto; text-align:center; display:block;">
+									<p style="margin:auto;font-family: '方正兰亭超细黑简体'; font-size:25px; color:#333333; line-height:30px;">裸蛋糕·摩天轮</p>
 								</div>
-							</div>
-							<div style=" height:60px; margin:0 auto; text-align:center; display:block; width:790px;">
-								<p style="margin:auto;font-family: '宋体'; font-size:30px; color:#333333; padding-top:15px; width:790px; height:30px;display:block;text-align:left; ">等待幸福</p>
-								<p style="margin:auto;font-family: '微软雅黑'; font-size:14px; color:#a56a4a; width:790px; height:30px; font-weight:bold;text-align:left; padding-top:10px;">Waiting For Happiness</p>
-							</div>
-							<div style=" height:246px; background-image:url(../img/7583acb2690ebcec19ce7f5e1029c13b.jpg); margin:0 auto; text-align:center; display:block;">
-								<div style=" width:790px; height:274px; margin:0 auto; text-align:center; display:block;">
-									<p style="margin: auto; font-family: 微软雅黑; font-size: 15px; color: rgb(102, 102, 102); padding-top: 45px; height: 16px; width: 790px; text-align: left;">天空的颜色斑斓得眩目</p>
-									<p style="margin: auto; font-family: 微软雅黑; font-size: 15px; color: rgb(102, 102, 102); padding-top: 5px; height: 16px; width: 795px; text-align: left;">摩天轮饰演着安静</p>
-									<p style="margin: auto; padding-top: 5px; height: 16px; width: 795px; text-align: left;">
-										<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">默默地，给人们传递幸福</span></font>
-									</p>
-									<p style="margin: auto; padding-top: 5px; height: 16px; width: 795px; text-align: left;">
-										<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">抬头仰望，兜兜转转</span></font>
-									</p>
-									<p style="margin: auto; padding-top: 5px; height: 16px; width: 795px; text-align: left;"><span style="color: rgb(102, 102, 102); font-family: 微软雅黑; font-size: 15px;"><br></span></p>
-									<p style="margin: auto; padding-top: 5px; height: 16px; width: 795px; text-align: left;">
-										<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">我一直在寻找属于自己的那一格幸福</span></font>
-									</p>
-									<p style="margin: auto; font-family: 微软雅黑; font-size: 15px; color: rgb(102, 102, 102); padding-top: 5px; height: 15px; width: 795px; text-align: left;">我知道它正在向我慢慢靠近</p>
-									<p style="margin: auto; font-family: 微软雅黑; font-size: 15px; color: rgb(102, 102, 102); padding-top: 5px; height: 15px; width: 795px; text-align: left;">幸福就像游乐场的摩天轮</p>
-									<p style="margin: auto; font-family: 微软雅黑; font-size: 15px; color: rgb(102, 102, 102); padding-top: 5px; height: 15px; width: 795px; text-align: left;">要转一大圈才能找到</p>
-									<p style="margin: auto; padding-top: 5px; height: 15px; width: 795px; text-align: left;">
-										<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">但它一直都在</span></font>
-									</p>
+								<div style=" height:508px; margin:0 auto; text-align:center; display:block; margin-top:20px;">
+									<img src="../img/45c239f12df49b3bc77f6c09aecd6c10.jpg" /></div>
+								<div style=" height:60px; margin:0 auto; text-align:center; display:block; width:790px;">
+									<p style="margin:auto;font-family: '宋体'; font-size:30px; color:#333333; padding-top:15px; width:790px; height:30px;display:block;text-align:left; ">美好食物，幸福生活</p>
+									<p style="margin:auto;font-family: '微软雅黑'; font-size:14px; color:#a56a4a; width:790px; height:30px; font-weight:bold;text-align:left; padding-top:10px;">Good Food, Happy Life&nbsp;</p>
 								</div>
-							</div>
-							<div style=" height:160px; margin:0 auto; text-align:center; display:block;">
-								<p style="margin:auto;font-family: '宋体'; font-size:31px; color:#333333; padding-top:60px;">摩天轮/设计灵感</p>
-								<p style="margin:auto; padding-top:20px;font-family:'微软雅黑'; font-size:16px; font-weight:bold; color:#a56a4a;">Design Inspiration</p>
-							</div>
-							<div style=" height:341px; margin:0 auto; text-align:center; display:block; margin-top:5px;">
-								<img alt="裸蛋糕·摩天轮" src="../img/4a4962d487f8be9e35d0ba3d5db03542.jpg"> </div>
-							<div style=" height:90px; margin:0 auto; text-align:center; display:block; margin-top:5px;">
-								<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:12px;">设计灵感来自带给人快乐的摩天轮。丰盛的新鲜水果融入香甜的乳脂奶油，</p>
-								<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:12px;">搭配香醇松软的巧克力蛋糕坯，给你一份甜蜜厚实的满足感。</p>
-							</div>
-							<div style=" height:160px; margin:0 auto; text-align:center; display:block;">
-								<p style="margin:auto;font-family: '宋体'; font-size:31px; color:#333333; padding-top:60px;">摩天轮 / 产品展示</p>
-								<p style="margin:auto; padding-top:20px;font-family:'微软雅黑'; font-size:16px; font-weight:bold; color:#a56a4a;">Pictuers</p>
-							</div>
-							<div style=" height:410px; margin:0 auto; text-align:center; display:block; margin-top:5px;">
-								<img src="../img/490093c720e863883c39759cea4d364f.jpg"><br>
-								<p style="margin:auto;font-family: '微软雅黑'; font-size:16px;color:#666666; height:20px;">这款蛋糕代表幸福、快乐和满足</p>
-							</div>
-							<div style=" height:454px; margin:0 auto; text-align:center; display:block; margin-top:5px;">
-								<img src="../img/c1bdb30273cdb9d0a7869dd69439d09c.jpg"><br>
-								<p style="margin:auto;font-family: '微软雅黑'; font-size:16px; color:#666666;">丰盛的新鲜水果，释放出清新自然的果香</p>
-							</div>
-							<div style=" height:420px; margin:0 auto; text-align:center; display:block; margin-top:5px;">
-								<img src="../img/1b9dfd339f7ee5a8a71d0b5906645eae.jpg"><br>
-								<p style="margin:auto;font-family: '微软雅黑'; font-size:16px; color:#666666;">融入香甜细腻的乳脂奶油</p>
-							</div>
-							<div style=" height:449px; margin:0 auto; text-align:center; display:block; margin-top:5px;">
-								<img src="../img/7c85300dbef7139781d5be1afea8b67a.jpg"><br>
-								<p style="margin:auto;font-family: '微软雅黑'; font-size:16px; color:#666666;">搭配香醇松软的巧克力蛋糕坯</p>
-							</div>
-							<div style=" height:500px; margin:0 auto; text-align:center; display:block; margin-top:5px;">
-								<img src="../img/dbbf5679498560d738591f83de1d8499.jpg"><br>
-								<p style="margin:auto;font-family: '微软雅黑'; font-size:16px; color:#666666;">给你一份甜蜜厚实的满足感</p>
-							</div>
-							<div style=" height:160px; margin:0 auto; text-align:center; display:block;">
-								<p style="margin:auto;font-family: '宋体'; font-size:31px; color:#333333; padding-top:60px;">摩天轮 / 产品参数</p>
-								<p style="margin:auto; padding-top:20px;font-family:'微软雅黑'; font-size:16px; font-weight:bold; color:#a56a4a;">PARAMETERS</p>
-							</div>
-							<div style=" height:300px; margin:0 auto; text-align:center; display:block; margin-top:20px; width:930px; ">
-								<div style=" width:300px; height:250px; margin:0 auto; display:block; float:left; padding-left:175px;">
-									<p style=" height:30px;font-family: '微软雅黑'; font-size:15px; color:#666666; text-align:left; padding-top:5px; line-height:30px;">生产日期：&nbsp;当天生产</p>
-									<p style=" height:30px;font-family: '微软雅黑'; font-size:15px; color:#666666; text-align:left; padding-top:5px; line-height:30px; ">保 质 期：&nbsp;48小时（6小时内食用口感最佳）</p>
-									<p style=" height:30px;font-family: '微软雅黑'; font-size:15px; color:#666666; text-align:left; padding-top:5px; line-height:30px;">所属系列：&nbsp;裸蛋糕</p>
-									<p style=" height:30px;font-family: '微软雅黑'; font-size:15px; color:#666666; text-align:left; padding-top:5px; line-height:30px; ">产品规格：&nbsp;2磅/3磅/4磅</p>
-									<p style=" height:30px;font-family: '微软雅黑'; font-size:15px; color:#666666; text-align:left; padding-top:5px; line-height:30px; ">产品产地：&nbsp;北京</p>
-									<p style=" height:30px;font-family: '微软雅黑'; font-size:15px; color:#666666; text-align:left; padding-top:5px;line-height:30px; ">储藏方式：&nbsp;5°左右冷藏保存</p>
-									<p style=" height:30px;font-family: '微软雅黑'; font-size:15px; color:#666666; text-align:left; padding-top:5px;line-height:30px; ">配送区域：&nbsp;北京</p>
+								<div style=" height:396px;background-image:url(http://micamika-images.s3.mall.ekaidian.com/07/62/ec/972342adb50774fcc4215494abca355f.jpg?1482733090#w); margin:0 auto; text-align:center; display:block;">
+									<div style=" width:790px; height:274px; margin:0 auto; text-align:center; display:block;">
+										<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:45px; height:16px; width:795px; display:block; text-align:left; ">丰盛的新鲜水果</p>
+										<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:5px;height:16px; width:795px; display:block; text-align:left;">和香甜乳脂奶油堆砌出</p>
+										<p style="margin: auto; padding-top: 5px; height: 16px; width: 795px; display: block; text-align: left;">
+											<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">色彩斑斓如梦幻的摩天轮裸蛋糕</span></font>
+										</p>
+										<p style="margin: auto; padding-top: 5px; height: 16px; width: 795px; text-align: left;">
+											<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">带给你甜蜜厚实的满足感</span></font>
+										</p>
+										<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; margin-top:35px;height:15px;width:795px; display:block; text-align:left;">十多种果汁四溢的新鲜水果</p>
+										<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:5px;height:15px; width:795px; display:block;text-align:left; ">加到9厘米高的摩天轮裸蛋糕里</p>
+										<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:5px;height:15px; width:795px; display:block; text-align:left;">释放出阵阵果香</p>
+										<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666;padding-top:5px;height:15px; width:795px; display:block; text-align:left;">搭配细腻顺滑的新西兰乳脂奶油</p>
+										<p style="margin: auto; padding-top: 5px; height: 15px; width: 795px; display: block; text-align: left;">
+											<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">厚实松软的巧克力蛋糕坯</span></font>
+										</p>
+										<p style="margin: auto; padding-top: 5px; height: 15px; width: 795px; display: block; text-align: left;">
+											<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">绽放出更加浓厚的香醇甜蜜</span></font>
+										</p>
+										<p style="margin: auto; padding-top: 5px; height: 15px; width: 795px; display: block; text-align: left;">
+											<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">带给你大大的满足</span></font>
+										</p>
+									</div>
 								</div>
-								<div style=" height:255px; width:451px; float:left; margin:0 auto; display:block;">
-									<img alt="裸蛋糕·摩天轮" src="../img/f165fec94816f11538a7ffd24ffa41ff.jpg"> </div>
-								<div style="width:500px; height:15px; margin:0 auto; display:block; float:left; padding-left:175px;">
-									<p style="height: 15px; text-align: left; padding-top: 5px; font-size: 15px; font-family: 微软雅黑; color: rgb(102, 102, 102);">配 料 表：时令水果（日本）、乳脂奶油（新西兰）、可可粉（法国）、百利甜酒（爱尔兰）、低筋粉（丹麦）、鸡蛋（中国）、幼砂糖（韩国）</p>
+								<div style=" height:92px; margin:0 auto; text-align:center; display:block;">
+									<img src="../img/1f30d088854efbe5f3fe35b94e4d301e.jpg"></div>
+								<div style=" height:60px; margin:0 auto; text-align:center; display:block; width:790px;">
+									<p style="margin:auto;font-family: '宋体'; font-size:30px; color:#333333; padding-top:15px; width:790px; height:30px;display:block; text-align:right; ">美好食物，幸福生活</p>
+									<p style="margin:auto;font-family: '微软雅黑'; font-size:14px; color:#a56a4a; width:790px; height:30px; font-weight:bold;text-align:right; padding-top:10px;">Good Food, Happy Life</p>
 								</div>
-							</div>
-							<div style=" height:30px; margin:0 auto; display:block; margin-top:25px;">
+								<div style=" height:287px; background-image:url(../img/dbcfea019463ba92eb546f3419881db3.jpg); margin:0 auto; text-align:center; display:block;">
+									<div style=" width:280px; height:300px; margin:0 auto; display:block; float:right;">
+										<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:45px;height:15px; width:270px; display:block; text-align:left;">我们一直在努力，尝试着接近幸福</p>
+										<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:5px;height:15px; width:260px; display:block; text-align:left;">但幸福是什么呢？</p>
+										<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:5px;height:15px; width:260px; display:block; text-align:left;">是清晨热气腾腾的可口早餐</p>
+										<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:5px;height:15px; width:260px; display:block; text-align:left;">给我补充满满的能量</p>
+										<p style="margin: auto; padding-top: 5px; height: 15px; width: 260px; display: block; text-align: left;">
+											<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">是沾染着露水新鲜采摘的娇艳玫瑰花</span></font>
+										</p>
+										<p style="margin: auto; padding-top: 5px; height: 15px; width: 260px; display: block; text-align: left;"><span style="font-size: 15px; color: rgb(102, 102, 102); font-family: 微软雅黑;">带来清香怡人的芬芳</span></p>
+										<p style="margin: auto; padding-top: 5px; height: 15px; width: 260px; display: block; text-align: left;">
+											<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">是夜晚回家照亮前路的那一盏路灯</span></font>
+										</p>
+										<p style="margin: auto; padding-top: 5px; height: 15px; width: 260px; display: block; text-align: left;">
+											<font color="#666666" face="微软雅黑"><span style="font-size: 15px;"></span></font>
+										</p>
+										<p style="margin: auto; padding-top: 5px; height: 15px; width: 260px; text-align: left;">
+											<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">赶走黑暗，让我倍感心安</span></font>
+										</p>
+										<p style="margin: auto; padding-top: 5px; height: 15px; width: 260px; text-align: left;">
+											<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">幸福，就像一架不停旋转的摩天轮</span></font>
+										</p>
+										<p style="margin: auto; padding-top: 5px; height: 15px; width: 260px; text-align: left;">
+											<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">一直就在你身边，随你走走停停</span></font>
+										</p>
+										<p style="margin: auto; padding-top: 5px; height: 15px; width: 260px; text-align: left;">
+											<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">只等待你发现它</span></font>
+										</p>
+										<p style="margin: auto; padding-top: 5px; height: 15px; width: 260px; text-align: left;"><span style="color: rgb(102, 102, 102); font-family: 微软雅黑; font-size: 15px;"><br></span></p>
+										<p style="margin: auto; padding-top: 5px; height: 15px; width: 260px; text-align: left;">
+											<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">这款蛋糕，叫做『摩天轮』</span></font>
+										</p>
+										<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:5px;height:15px; width:260px; display:block; text-align:left;">代表幸福、快乐和满足</p>
+										<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:5px;height:15px; width:260px; display:block; text-align:left;">献给每一个想要幸福快乐的小伙伴</p>
+										<p style="margin: auto; padding-top: 5px; height: 15px; width: 260px; display: block; text-align: left;"></p>
+									</div>
+								</div>
+								<div style=" height:60px; margin:0 auto; text-align:center; display:block; width:790px;">
+									<p style="margin:auto;font-family: '宋体'; font-size:30px; color:#333333; padding-top:15px; width:790px; height:30px;display:block;text-align:left; ">摩天轮</p>
+									<p style="margin:auto;font-family: '微软雅黑'; font-size:14px; color:#a56a4a; width:790px; height:30px; font-weight:bold;text-align:left; padding-top:10px;">FERRIS WHEEL&nbsp;</p>
+								</div>
+								<div style=" background-image: url(../img/de410e8c684ffb98c1b7c1e1d021f3bc.jpg); margin:0 auto; text-align:center; display:block;">
+									<div style=" width:790px; height:274px; margin:0 auto; text-align:center; display:block;">
+										<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:45px; height:15px; width:790px; display:block; text-align:left; ">饱满缤纷的丰盛水果</p>
+										<p style="margin: auto; padding-top: 5px; height: 15px; width: 795px; text-align: left;">
+											<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">融入香甜顺滑的新鲜乳脂奶油</span></font>
+										</p>
+										<p style="margin: auto; padding-top: 5px; height: 15px; width: 795px; text-align: left;">
+											<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">搭配厚厚的巧克力蛋糕坯</span></font>
+										</p>
+										<div style="text-align: left;"><br></div>
+										<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:30px;height:15px; width:795px; display:block; text-align:left;">一口咬下去</p>
+										<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; margin-top:5px;height:15px;width:795px; display:block; text-align:left;">甜蜜多汁、乳香四溢</p>
+										<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; margin-top:5px;height:15px;width:795px; display:block; text-align:left;">带给你幸福甜蜜的充实满足感</p>
+									</div>
+								</div>
+								<div style=" height:60px; margin:0 auto; text-align:center; display:block; width:790px; margin-top:30px;">
+									<p style="margin:auto;font-family: '宋体'; font-size:30px; color:#333333; padding-top:15px; width:790px; height:30px;display:block; text-align:right; ">新西兰牧场 &nbsp;乳脂奶油</p>
+									<p style="margin:auto;font-family: '微软雅黑'; font-size:14px; color:#a56a4a; width:790px; height:30px; font-weight:bold;text-align:right; padding-top:10px;">New Zealand Ranch &nbsp; &nbsp; Dairy Cream&nbsp;</p>
+								</div>
+								<div style=" height:246px; background-image:url(../img/e9ade27e9af84aa1a7c95d095889525b.jpg); margin:0 auto; text-align:center; display:block;">
+									<div style=" width:280px; height:300px; margin:0 auto; display:block; float:right; margin-top:30px;">
+										<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:45px;height:15px; width:790px; display:block; text-align:left; ">100%新西兰乳脂奶油</p>
+										<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666;padding-top:5px;height:15px; width:795px; display:block; text-align:left;">来自新西兰牧草饲养的乳牛孕育的乳脂奶油</p>
+										<p style="margin: auto; padding-top: 5px; height: 15px; width: 795px; display: block; text-align: left;">
+											<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">营养丰富 &nbsp;质地柔软 &nbsp;含脂量低</span></font>
+										</p>
+										<p style="margin: auto; padding-top: 5px; height: 15px; width: 795px; display: block; text-align: left;">
+											<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">更健康美味</span></font>
+										</p>
+										<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:30px;height:15px; width:795px; display:block; text-align:left;">淡淡的黄色是奶牛食用</p>
+										<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; margin-top:5px;height:15px;width:795px; display:block; text-align:left;">含有丰富胡萝卜素的天然牧草的特征</p>
+										<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; margin-top:5px;height:15px;width:795px; display:block; text-align:left;">更易被人体吸收</p>
+										<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; margin-top:5px;height:15px;width:795px; display:block; text-align:left;">口感细腻顺滑 &nbsp;入口即化</p>
+									</div>
+								</div>
+								<div style=" height:60px; margin:0 auto; text-align:center; display:block; width:790px;">
+									<p style="margin:auto;font-family: '宋体'; font-size:30px; color:#333333; padding-top:15px; width:790px; height:30px;display:block;text-align:left; ">等待幸福</p>
+									<p style="margin:auto;font-family: '微软雅黑'; font-size:14px; color:#a56a4a; width:790px; height:30px; font-weight:bold;text-align:left; padding-top:10px;">Waiting For Happiness</p>
+								</div>
+								<div style=" height:246px; background-image:url(../img/7583acb2690ebcec19ce7f5e1029c13b.jpg); margin:0 auto; text-align:center; display:block;">
+									<div style=" width:790px; height:274px; margin:0 auto; text-align:center; display:block;">
+										<p style="margin: auto; font-family: 微软雅黑; font-size: 15px; color: rgb(102, 102, 102); padding-top: 45px; height: 16px; width: 790px; text-align: left;">天空的颜色斑斓得眩目</p>
+										<p style="margin: auto; font-family: 微软雅黑; font-size: 15px; color: rgb(102, 102, 102); padding-top: 5px; height: 16px; width: 795px; text-align: left;">摩天轮饰演着安静</p>
+										<p style="margin: auto; padding-top: 5px; height: 16px; width: 795px; text-align: left;">
+											<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">默默地，给人们传递幸福</span></font>
+										</p>
+										<p style="margin: auto; padding-top: 5px; height: 16px; width: 795px; text-align: left;">
+											<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">抬头仰望，兜兜转转</span></font>
+										</p>
+										<p style="margin: auto; padding-top: 5px; height: 16px; width: 795px; text-align: left;"><span style="color: rgb(102, 102, 102); font-family: 微软雅黑; font-size: 15px;"><br></span></p>
+										<p style="margin: auto; padding-top: 5px; height: 16px; width: 795px; text-align: left;">
+											<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">我一直在寻找属于自己的那一格幸福</span></font>
+										</p>
+										<p style="margin: auto; font-family: 微软雅黑; font-size: 15px; color: rgb(102, 102, 102); padding-top: 5px; height: 15px; width: 795px; text-align: left;">我知道它正在向我慢慢靠近</p>
+										<p style="margin: auto; font-family: 微软雅黑; font-size: 15px; color: rgb(102, 102, 102); padding-top: 5px; height: 15px; width: 795px; text-align: left;">幸福就像游乐场的摩天轮</p>
+										<p style="margin: auto; font-family: 微软雅黑; font-size: 15px; color: rgb(102, 102, 102); padding-top: 5px; height: 15px; width: 795px; text-align: left;">要转一大圈才能找到</p>
+										<p style="margin: auto; padding-top: 5px; height: 15px; width: 795px; text-align: left;">
+											<font color="#666666" face="微软雅黑"><span style="font-size: 15px;">但它一直都在</span></font>
+										</p>
+									</div>
+								</div>
+								<div style=" height:160px; margin:0 auto; text-align:center; display:block;">
+									<p style="margin:auto;font-family: '宋体'; font-size:31px; color:#333333; padding-top:60px;">摩天轮/设计灵感</p>
+									<p style="margin:auto; padding-top:20px;font-family:'微软雅黑'; font-size:16px; font-weight:bold; color:#a56a4a;">Design Inspiration</p>
+								</div>
+								<div style=" height:341px; margin:0 auto; text-align:center; display:block; margin-top:5px;">
+									<img alt="裸蛋糕·摩天轮" src="../img/4a4962d487f8be9e35d0ba3d5db03542.jpg"> </div>
+								<div style=" height:90px; margin:0 auto; text-align:center; display:block; margin-top:5px;">
+									<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:12px;">设计灵感来自带给人快乐的摩天轮。丰盛的新鲜水果融入香甜的乳脂奶油，</p>
+									<p style="margin:auto;font-family: '微软雅黑'; font-size:15px; color:#666666; padding-top:12px;">搭配香醇松软的巧克力蛋糕坯，给你一份甜蜜厚实的满足感。</p>
+								</div>
+								<div style=" height:160px; margin:0 auto; text-align:center; display:block;">
+									<p style="margin:auto;font-family: '宋体'; font-size:31px; color:#333333; padding-top:60px;">摩天轮 / 产品展示</p>
+									<p style="margin:auto; padding-top:20px;font-family:'微软雅黑'; font-size:16px; font-weight:bold; color:#a56a4a;">Pictuers</p>
+								</div>
+								<div style=" height:410px; margin:0 auto; text-align:center; display:block; margin-top:5px;">
+									<img src="../img/490093c720e863883c39759cea4d364f.jpg"><br>
+									<p style="margin:auto;font-family: '微软雅黑'; font-size:16px;color:#666666; height:20px;">这款蛋糕代表幸福、快乐和满足</p>
+								</div>
+								<div style=" height:454px; margin:0 auto; text-align:center; display:block; margin-top:5px;">
+									<img src="../img/c1bdb30273cdb9d0a7869dd69439d09c.jpg"><br>
+									<p style="margin:auto;font-family: '微软雅黑'; font-size:16px; color:#666666;">丰盛的新鲜水果，释放出清新自然的果香</p>
+								</div>
+								<div style=" height:420px; margin:0 auto; text-align:center; display:block; margin-top:5px;">
+									<img src="../img/1b9dfd339f7ee5a8a71d0b5906645eae.jpg"><br>
+									<p style="margin:auto;font-family: '微软雅黑'; font-size:16px; color:#666666;">融入香甜细腻的乳脂奶油</p>
+								</div>
+								<div style=" height:449px; margin:0 auto; text-align:center; display:block; margin-top:5px;">
+									<img src="../img/7c85300dbef7139781d5be1afea8b67a.jpg"><br>
+									<p style="margin:auto;font-family: '微软雅黑'; font-size:16px; color:#666666;">搭配香醇松软的巧克力蛋糕坯</p>
+								</div>
+								<div style=" height:500px; margin:0 auto; text-align:center; display:block; margin-top:5px;">
+									<img src="../img/dbbf5679498560d738591f83de1d8499.jpg"><br>
+									<p style="margin:auto;font-family: '微软雅黑'; font-size:16px; color:#666666;">给你一份甜蜜厚实的满足感</p>
+								</div>
+								<div style=" height:160px; margin:0 auto; text-align:center; display:block;">
+									<p style="margin:auto;font-family: '宋体'; font-size:31px; color:#333333; padding-top:60px;">摩天轮 / 产品参数</p>
+									<p style="margin:auto; padding-top:20px;font-family:'微软雅黑'; font-size:16px; font-weight:bold; color:#a56a4a;">PARAMETERS</p>
+								</div>
+								<div style=" height:300px; margin:0 auto; text-align:center; display:block; margin-top:20px; width:930px; ">
+									<div style=" width:300px; height:250px; margin:0 auto; display:block; float:left; padding-left:175px;">
+										<p style=" height:30px;font-family: '微软雅黑'; font-size:15px; color:#666666; text-align:left; padding-top:5px; line-height:30px;">生产日期：&nbsp;当天生产</p>
+										<p style=" height:30px;font-family: '微软雅黑'; font-size:15px; color:#666666; text-align:left; padding-top:5px; line-height:30px; ">保 质 期：&nbsp;48小时（6小时内食用口感最佳）</p>
+										<p style=" height:30px;font-family: '微软雅黑'; font-size:15px; color:#666666; text-align:left; padding-top:5px; line-height:30px;">所属系列：&nbsp;裸蛋糕</p>
+										<p style=" height:30px;font-family: '微软雅黑'; font-size:15px; color:#666666; text-align:left; padding-top:5px; line-height:30px; ">产品规格：&nbsp;2磅/3磅/4磅</p>
+										<p style=" height:30px;font-family: '微软雅黑'; font-size:15px; color:#666666; text-align:left; padding-top:5px; line-height:30px; ">产品产地：&nbsp;北京</p>
+										<p style=" height:30px;font-family: '微软雅黑'; font-size:15px; color:#666666; text-align:left; padding-top:5px;line-height:30px; ">储藏方式：&nbsp;5°左右冷藏保存</p>
+										<p style=" height:30px;font-family: '微软雅黑'; font-size:15px; color:#666666; text-align:left; padding-top:5px;line-height:30px; ">配送区域：&nbsp;北京</p>
+									</div>
+									<div style=" height:255px; width:451px; float:left; margin:0 auto; display:block;">
+										<img alt="裸蛋糕·摩天轮" src="../img/f165fec94816f11538a7ffd24ffa41ff.jpg"> </div>
+									<div style="width:500px; height:15px; margin:0 auto; display:block; float:left; padding-left:175px;">
+										<p style="height: 15px; text-align: left; padding-top: 5px; font-size: 15px; font-family: 微软雅黑; color: rgb(102, 102, 102);">配 料 表：时令水果（日本）、乳脂奶油（新西兰）、可可粉（法国）、百利甜酒（爱尔兰）、低筋粉（丹麦）、鸡蛋（中国）、幼砂糖（韩国）</p>
+									</div>
+								</div>
+								<div style=" height:30px; margin:0 auto; display:block; margin-top:25px;">
+									<p style=" height:1px; width:930px; background-color:#999;"></p>
+									<div style=" width:930px; height:30px;">
+										<li style=" width:175px; height:20px;list-style-type:none;text-align:center; line-height:30px; display:block; float:left;">
+											<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; line-height:20px;"> 蛋糕规格 </a>
+										</li>
+										<li style=" width:175px; height:20px;list-style-type:none; text-align:center; line-height:30px; display:block;float:left;">
+											<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; "> 适合人数 </a>
+										</li>
+										<li style=" width:175px; height:20px;list-style-type:none;text-align:center; line-height:30px; display:block;float:left;">
+											<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; text-align:center; line-height:20px;"> 规格尺寸(约) </a>
+										</li>
+										<li style=" width:175px; height:20px;list-style-type:none;text-align:center; line-height:30px; display:block;float:left;">
+											<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; text-align:center; line-height:20px;"> 免费餐具 </a>
+										</li>
+										<li style=" width:175px; height:20px;list-style-type:none;text-align:center; line-height:30px; display:block;float:left;">
+											<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; text-align:center; line-height:20px;">提前预定时间</a>
+										</li>
+									</div>
+								</div>
 								<p style=" height:1px; width:930px; background-color:#999;"></p>
 								<div style=" width:930px; height:30px;">
 									<li style=" width:175px; height:20px;list-style-type:none;text-align:center; line-height:30px; display:block; float:left;">
-										<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; line-height:20px;"> 蛋糕规格 </a>
+										<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; line-height:20px;"> 2磅 </a>
 									</li>
 									<li style=" width:175px; height:20px;list-style-type:none; text-align:center; line-height:30px; display:block;float:left;">
-										<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; "> 适合人数 </a>
+										<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; "> 3-5人 </a>
 									</li>
 									<li style=" width:175px; height:20px;list-style-type:none;text-align:center; line-height:30px; display:block;float:left;">
-										<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; text-align:center; line-height:20px;"> 规格尺寸(约) </a>
+										<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; text-align:center; line-height:20px;"> 15cmⅹ15cmⅹ9cm </a>
 									</li>
 									<li style=" width:175px; height:20px;list-style-type:none;text-align:center; line-height:30px; display:block;float:left;">
-										<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; text-align:center; line-height:20px;"> 免费餐具 </a>
+										<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; text-align:center; line-height:20px;"> 5套 </a>
 									</li>
 									<li style=" width:175px; height:20px;list-style-type:none;text-align:center; line-height:30px; display:block;float:left;">
-										<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; text-align:center; line-height:20px;">提前预定时间</a>
+										<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; text-align:center; line-height:20px;">5小时</a>
 									</li>
 								</div>
+								<p style=" height:1px; width:930px; background-color:#999;"></p>
+								<div style=" width:930px; height:30px;">
+									<li style=" width:175px; height:20px;list-style-type:none;text-align:center; line-height:30px; display:block; float:left;">
+										<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; line-height:20px;"> 3磅 </a>
+									</li>
+									<li style=" width:175px; height:20px;list-style-type:none; text-align:center; line-height:30px; display:block;float:left;">
+										<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; "> 5-8人 </a>
+									</li>
+									<li style=" width:175px; height:20px;list-style-type:none;text-align:center; line-height:30px; display:block;float:left;">
+										<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; text-align:center; line-height:20px;"> 17cmⅹ17cmⅹ9cm</a>
+									</li>
+									<li style=" width:175px; height:20px;list-style-type:none;text-align:center; line-height:30px; display:block;float:left;">
+										<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; text-align:center; line-height:20px;"> 10套 </a>
+									</li>
+									<li style=" width:175px; height:20px;list-style-type:none;text-align:center; line-height:30px; display:block;float:left;">
+										<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; text-align:center; line-height:30px;">5小时</a>
+									</li>
+								</div>
+								<p style=" height:1px; width:930px; background-color:#999;"></p>
+								<div style=" width:930px; height:30px;">
+									<li style=" width:175px; height:20px;list-style-type:none;text-align:center; line-height:30px; display:block; float:left;">
+										<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; line-height:20px;"> 4磅 </a>
+									</li>
+									<li style=" width:175px; height:20px;list-style-type:none; text-align:center; line-height:30px; display:block;float:left;">
+										<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; "> 8-12人 </a>
+									</li>
+									<li style=" width:175px; height:20px;list-style-type:none;text-align:center; line-height:30px; display:block;float:left;">
+										<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; text-align:center; line-height:20px;"> 20cmⅹ20cmⅹ9cm</a>
+									</li>
+									<li style=" width:175px; height:20px;list-style-type:none;text-align:center; line-height:30px; display:block;float:left;">
+										<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; text-align:center; line-height:20px;"> 15套 </a>
+									</li>
+									<li style=" width:175px; height:20px;list-style-type:none;text-align:center; line-height:30px; display:block;float:left;">
+										<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; text-align:center; line-height:20px;">5小时</a>
+									</li>
+								</div>
+								<p style=" height:1px; width:930px; background-color:#999;"></p>
+								<p style="margin:auto;font-family: '微软雅黑'; font-size:14px; color:#333333; padding-top:10px; text-align:center;">（此商品为手工制作，若实物与图片略有差别，请以实物为准）</p>
+								<div style=" height:160px; margin:0 auto; text-align:center; display:block; margin-top:15px;">
+									<img src="../img/c8eb352cbe97ebaf4df49d1b41645049.jpg">
+									<img src="../img/595e4fead0173be52d26f3c069cc9dad.jpg"></div>
 							</div>
-							<p style=" height:1px; width:930px; background-color:#999;"></p>
-							<div style=" width:930px; height:30px;">
-								<li style=" width:175px; height:20px;list-style-type:none;text-align:center; line-height:30px; display:block; float:left;">
-									<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; line-height:20px;"> 2磅 </a>
-								</li>
-								<li style=" width:175px; height:20px;list-style-type:none; text-align:center; line-height:30px; display:block;float:left;">
-									<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; "> 3-5人 </a>
-								</li>
-								<li style=" width:175px; height:20px;list-style-type:none;text-align:center; line-height:30px; display:block;float:left;">
-									<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; text-align:center; line-height:20px;"> 15cmⅹ15cmⅹ9cm </a>
-								</li>
-								<li style=" width:175px; height:20px;list-style-type:none;text-align:center; line-height:30px; display:block;float:left;">
-									<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; text-align:center; line-height:20px;"> 5套 </a>
-								</li>
-								<li style=" width:175px; height:20px;list-style-type:none;text-align:center; line-height:30px; display:block;float:left;">
-									<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; text-align:center; line-height:20px;">5小时</a>
-								</li>
-							</div>
-							<p style=" height:1px; width:930px; background-color:#999;"></p>
-							<div style=" width:930px; height:30px;">
-								<li style=" width:175px; height:20px;list-style-type:none;text-align:center; line-height:30px; display:block; float:left;">
-									<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; line-height:20px;"> 3磅 </a>
-								</li>
-								<li style=" width:175px; height:20px;list-style-type:none; text-align:center; line-height:30px; display:block;float:left;">
-									<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; "> 5-8人 </a>
-								</li>
-								<li style=" width:175px; height:20px;list-style-type:none;text-align:center; line-height:30px; display:block;float:left;">
-									<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; text-align:center; line-height:20px;"> 17cmⅹ17cmⅹ9cm</a>
-								</li>
-								<li style=" width:175px; height:20px;list-style-type:none;text-align:center; line-height:30px; display:block;float:left;">
-									<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; text-align:center; line-height:20px;"> 10套 </a>
-								</li>
-								<li style=" width:175px; height:20px;list-style-type:none;text-align:center; line-height:30px; display:block;float:left;">
-									<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; text-align:center; line-height:30px;">5小时</a>
-								</li>
-							</div>
-							<p style=" height:1px; width:930px; background-color:#999;"></p>
-							<div style=" width:930px; height:30px;">
-								<li style=" width:175px; height:20px;list-style-type:none;text-align:center; line-height:30px; display:block; float:left;">
-									<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; line-height:20px;"> 4磅 </a>
-								</li>
-								<li style=" width:175px; height:20px;list-style-type:none; text-align:center; line-height:30px; display:block;float:left;">
-									<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; "> 8-12人 </a>
-								</li>
-								<li style=" width:175px; height:20px;list-style-type:none;text-align:center; line-height:30px; display:block;float:left;">
-									<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; text-align:center; line-height:20px;"> 20cmⅹ20cmⅹ9cm</a>
-								</li>
-								<li style=" width:175px; height:20px;list-style-type:none;text-align:center; line-height:30px; display:block;float:left;">
-									<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; text-align:center; line-height:20px;"> 15套 </a>
-								</li>
-								<li style=" width:175px; height:20px;list-style-type:none;text-align:center; line-height:30px; display:block;float:left;">
-									<a style="font-family: '微软雅黑'; font-size:16px; color:#666666; text-align:center; line-height:20px;">5小时</a>
-								</li>
-							</div>
-							<p style=" height:1px; width:930px; background-color:#999;"></p>
-							<p style="margin:auto;font-family: '微软雅黑'; font-size:14px; color:#333333; padding-top:10px; text-align:center;">（此商品为手工制作，若实物与图片略有差别，请以实物为准）</p>
-							<div style=" height:160px; margin:0 auto; text-align:center; display:block; margin-top:15px;">
-								<img src="../img/c8eb352cbe97ebaf4df49d1b41645049.jpg">
-								<img src="../img/595e4fead0173be52d26f3c069cc9dad.jpg"></div>
 						</div>
 					</div>
 				</div>
-					
-			
-			
-			<!--第二个子页面-->
-			<div id="type_tab_2" style="display: none;">
-          	    <img src="../img/9cd214aa860fc1a4d2820cfe842f2229.jpg">
-			    <img src="../img/4a59206acde3086b94836dfd58c15e40.jpg">
-				<img src="../img/5f280db48e991741049e971fc02f9d18.jpg">
-				<img src="../img/aa0345c1e8d0a9e648334cd795520687.jpg">&nbsp;
-				<img src="../img/70d12634660dd0d0420f7b8d34742dda.jpg">
-				<img src="../img/d5800d1c98f01500c1504909a3e9840a.jpg">
-			</div>
-			
-        		 <!--第三个子页面-->
-        		<div id="type_tab_3" style="display: none;">
-        		 	<h2>优惠券使用说明</h2>
-        		 	<p>1.客户在米卡米卡官方网站注册个人账户（已注册用户可直接登录个人账户）</p>
-        		 	<img src="../img/a5e5be9d333fd5fb3cc1b4c0c54312b9.png" />
-        		 	<p>或</p>
-        		 	<img src="../img/cbecf405cf6132c11a2e43ac80f7394f.png" />
-        		 	<p>2.成功登陆后，进入首页选择你喜欢的蛋糕，选定款式，点击“<span>立即购买</span>”，跳转到提交订单信息页面</p>
-        		 	<img src="../img/f4faca8c8cac277523f7349738aaf8cf.png" />
-        		 	<p>3.在提交订单信息页面的底部找到结算信息栏，点开“<span>使用优惠券</span>“</p>
-        		 	<img src="../img/45d8d6e13026d7e9ee1fd5c80bea4f5f.png" />
-        		 	<p>4.在已有优惠券中，点击“<span>确定</span>“</p>
-        		 	<img src="../img/a7f0fc68119ecdcda04c51b041d5b1db.png" />
-        		 	<p>5.在输入号码框中输入你的优惠码后，点击“<span>确定</span>“，即可在总金额中减免相对应的优惠券金额</p>
-        		 	<img src="../img/4d0830253aa1a71d2f6cb91666ac4911.png" />
-        		 	<p>6.点击“<span>提交订单</span>“并支付剩余金额，即完成优惠券的使用及蛋糕的购买</p>
-        		 	<img src="../img/99e125e8c92c0586ca8bef1cc5a1f453.png" />
-        		 	
-        		</div>
-        		 <!--第四子页面-->
-        		 <div id="type_tab_4" style="display: none;">
-        		 	<h2>礼金卡使用说明</h2>
-        		 	<p>1.客户在米卡米卡官方网站注册个人账户（已注册用户可直接登录个人账户）</p>
-        		 	<img src="../img/39a3f6df778d63872002b4fc906face7.jpg" />
-        		 	<p>或</p>
-        		 	<img src="../img/cf9fdc4e304d118425ff3c59610c708d.jpg" />
-        		 	<p>2、注册成功后，进入“会员中心”页面，选择“预存款充值”；</p>
-        		 	<img src="../img/bf397fdfe822b94710c7ee8c0497ca25.jpg" />
-        		 	<p>3、进入“充值”页面，选择礼金卡方式进行充值；</p>
-        		 	<img src="../img/c0bb115c60888bade8908f9958369a0d.jpg" />
-        		 	<p>4、刮开密码区，在礼金卡充值页面直接输入密码（无需输入礼金卡号），即可充值成功，使用“预存款”方式进行消费。</p>
-        		 	<p>5、“预存款”仅能购买蛋糕、饼干等实体产品，不能购买充值卡。</p>
-        		 	
-        		 </div>
-        		  <!--第五个子页面-->
-        		  <div id="type_tab_5" style="display:none;">
-        		 	<h2> 配送范围及时间</h2>
-        		 	<strong>1.客户在米卡米卡官方网站注册个人账户（已注册用户可直接登录个人账户）</strong><br />
-        		 	<p class="kong"> 北京市</p>
-        		 	<p>北京市区内全城配送，最远到达北京六环外10公里。</p>
-        		 	<p> 暂不支持配送区域：昌平南口镇，平谷区，密云县，怀柔县，通州燕郊，延庆县。</p>
-        		 	<p class="kong">  天津市</p>
-        		 	<p>天津市内和平区、河西区、南开区、河东区、河北区、西青区、红桥区等外环以内区域。</p>
-        		 	<p>暂不支持配送区域：外环以外区域暂不支持配送。</p>
-        		 	<p class="kong">（米卡米卡蛋糕是首家配送员出示健康证的商家）</p>
-        		 	<p class="kong">配送费收取标准：</p>
-        		 	<p>单笔订单满100元免运费；</p>
-        		 	<p>北京地区：不满100元的订单六环内收取10元配送费，六环外10公里以内收取50元配送费。</p>
-        		 	<p>天津地区：城区至快速路以内不收运费，快速路至外环之间收取10元运费。</p>
-        		 	<p class="kong">米卡米卡蛋糕配送时间是：</p>
-        		 	<p>米卡米卡蛋糕配送时间是：</p>
-        		 	<p>北京市</p>
-        		 	<p>五环内，配送时间为09:00-21:00</p>
-        		 	<p>五环外，配送时间为11:00-18:00</p>
-        		 	<p>天津市</p>
-        		 	<p>快速路以内，配送时间为09:00-21:00</p>
-        		 	<p class="kong">快速路至外环之间，配送时间为11:00-18:00</p>
-        		 	<img src="../img/49ba17c796ced7fa1eafea83fb57d14d.jpg" />
-        		 	<div>
-			</div>
-        </div>
-		</div>
-		</div>
-		
-		</div>
+				<!--第二个子页面-->
+				<div id="type_tab_2" style="display: none;">
+					<img src="../img/9cd214aa860fc1a4d2820cfe842f2229.jpg">
+					<img src="../img/4a59206acde3086b94836dfd58c15e40.jpg">
+					<img src="../img/5f280db48e991741049e971fc02f9d18.jpg">
+					<img src="../img/aa0345c1e8d0a9e648334cd795520687.jpg">&nbsp;
+					<img src="../img/70d12634660dd0d0420f7b8d34742dda.jpg">
+					<img src="../img/d5800d1c98f01500c1504909a3e9840a.jpg">
+				</div>
+				<!--第三个子页面-->
+				<div id="type_tab_3" style="display: none;">
+					<h2>优惠券使用说明</h2>
+					<p>1.客户在米卡米卡官方网站注册个人账户（已注册用户可直接登录个人账户）</p>
+					<img src="../img/a5e5be9d333fd5fb3cc1b4c0c54312b9.png" />
+					<p>或</p>
+					<img src="../img/cbecf405cf6132c11a2e43ac80f7394f.png" />
+					<p>2.成功登陆后，进入首页选择你喜欢的蛋糕，选定款式，点击“<span>立即购买</span>”，跳转到提交订单信息页面</p>
+					<img src="../img/f4faca8c8cac277523f7349738aaf8cf.png" />
+					<p>3.在提交订单信息页面的底部找到结算信息栏，点开“<span>使用优惠券</span>“</p>
+					<img src="../img/45d8d6e13026d7e9ee1fd5c80bea4f5f.png" />
+					<p>4.在已有优惠券中，点击“<span>确定</span>“</p>
+					<img src="../img/a7f0fc68119ecdcda04c51b041d5b1db.png" />
+					<p>5.在输入号码框中输入你的优惠码后，点击“<span>确定</span>“，即可在总金额中减免相对应的优惠券金额</p>
+					<img src="../img/4d0830253aa1a71d2f6cb91666ac4911.png" />
+					<p>6.点击“<span>提交订单</span>“并支付剩余金额，即完成优惠券的使用及蛋糕的购买</p>
+					<img src="../img/99e125e8c92c0586ca8bef1cc5a1f453.png" />
 
+				</div>
+				<!--第四子页面-->
+				<div id="type_tab_4" style="display: none;">
+					<h2>礼金卡使用说明</h2>
+					<p>1.客户在米卡米卡官方网站注册个人账户（已注册用户可直接登录个人账户）</p>
+					<img src="../img/39a3f6df778d63872002b4fc906face7.jpg" />
+					<p>或</p>
+					<img src="../img/cf9fdc4e304d118425ff3c59610c708d.jpg" />
+					<p>2、注册成功后，进入“会员中心”页面，选择“预存款充值”；</p>
+					<img src="../img/bf397fdfe822b94710c7ee8c0497ca25.jpg" />
+					<p>3、进入“充值”页面，选择礼金卡方式进行充值；</p>
+					<img src="../img/c0bb115c60888bade8908f9958369a0d.jpg" />
+					<p>4、刮开密码区，在礼金卡充值页面直接输入密码（无需输入礼金卡号），即可充值成功，使用“预存款”方式进行消费。</p>
+					<p>5、“预存款”仅能购买蛋糕、饼干等实体产品，不能购买充值卡。</p>
+
+				</div>
+				<!--第五个子页面-->
+				<div id="type_tab_5" style="display:none;">
+					<h2> 配送范围及时间</h2>
+					<strong>1.客户在米卡米卡官方网站注册个人账户（已注册用户可直接登录个人账户）</strong><br />
+					<p class="kong"> 北京市</p>
+					<p>北京市区内全城配送，最远到达北京六环外10公里。</p>
+					<p> 暂不支持配送区域：昌平南口镇，平谷区，密云县，怀柔县，通州燕郊，延庆县。</p>
+					<p class="kong"> 天津市</p>
+					<p>天津市内和平区、河西区、南开区、河东区、河北区、西青区、红桥区等外环以内区域。</p>
+					<p>暂不支持配送区域：外环以外区域暂不支持配送。</p>
+					<p class="kong">（米卡米卡蛋糕是首家配送员出示健康证的商家）</p>
+					<p class="kong">配送费收取标准：</p>
+					<p>单笔订单满100元免运费；</p>
+					<p>北京地区：不满100元的订单六环内收取10元配送费，六环外10公里以内收取50元配送费。</p>
+					<p>天津地区：城区至快速路以内不收运费，快速路至外环之间收取10元运费。</p>
+					<p class="kong">米卡米卡蛋糕配送时间是：</p>
+					<p>米卡米卡蛋糕配送时间是：</p>
+					<p>北京市</p>
+					<p>五环内，配送时间为09:00-21:00</p>
+					<p>五环外，配送时间为11:00-18:00</p>
+					<p>天津市</p>
+					<p>快速路以内，配送时间为09:00-21:00</p>
+					<p class="kong">快速路至外环之间，配送时间为11:00-18:00</p>
+					<img src="../img/49ba17c796ced7fa1eafea83fb57d14d.jpg" />
+					<div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="footer"></div>
 	</body>
 	<script src="../requirejs/require.js" data-main="../js/goods"></script>
-	
-
-	
-	</script>
-
 </html>

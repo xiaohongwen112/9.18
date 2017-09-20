@@ -1,4 +1,31 @@
+table{
+	border-collapse: collapse;
+    border-spacing: 0;
+}
+button{
+	border: none;
+	outline: none;
+}
+button:hover{
+	opacity: .8;
+	cursor: pointer;
+}
+.cart-main .order-price .total em, 
+.cart-main .order-price .total .order-container .notice-box i, 
+.order-container .notice-box .cart-main .order-price .total i {
+    font-weight: bold;
+}
+a{
+	color: #666666;
+}
+.cart-main .p-title a:hover,
+ .cart-main .p-gift a:hover, 
+ .cart-main .btn-goon:hover {
+    text-decoration: underline;
+    color: #026EB7;
+}
 #index_cart{
+	display: none;
     width: 1150px;
     clear: both;
     margin: 0px auto 0 auto;
@@ -47,3 +74,235 @@
     padding-right: 338px;
     padding-top: 15px;
 }
+/*存在商品*/
+#hava_goods,
+#cart_main{
+	width: 1150px;
+	margin: 0 auto;
+}
+
+#cart_steps{
+	width:100px;
+	float: right;
+}
+table.cart_main{
+	color: #666666;
+	border: 1px solid #e6e6e6;
+    table-layout: fixed;
+}
+colgroup {
+    display: table-column-group;
+}
+.cart-main .col-1, .cart-main .col-6,
+.cart-main .col-3, .cart-main .col-7,
+.cart-main .col-4, .cart-main .col-5,  
+.cart-main .col-8 {
+    width: 100px;
+}    
+.cart-main .cart-left, .cart-main thead,
+ .cart-main .cart-right {
+    background-color: #d8d8d8;
+}
+.cart-main thead tr {
+    height: 37px;
+}
+.cart-main thead th {
+    font-weight: 400;
+    color: #666666;
+    font-size: 14px;
+    text-align: center;
+}
+.cart-main .cart-item {
+    border-bottom: 1px solid #efefef;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    border-top:1px solid #eee;
+}
+.cart-main .cart-product td, .cart-main .p-packs td {
+    padding-top: 15px;
+    padding-bottom: 8px;
+}
+input, select, textarea {
+    border-width: 1px;
+    border-color: #cccccc;
+    padding: 1px;
+}
+.cart-main .p-pic {
+    width: 80px;
+    height: 80px;
+    line-height: 78px;
+    border: 1px solid #dddddd;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial;
+}
+.cart-main td {
+    line-height: 20px;
+    vertical-align: top;
+    text-align: center;
+    padding: 2px 0;
+}
+.cart-main .order-price {
+    font-size: 14px;
+}
+.cart-main .order-price {
+    padding: 15px 1px 10px;
+    line-height: 30px;
+    white-space: nowrap;
+}
+.cart-main td {
+    line-height: 20px;
+    vertical-align: top;
+    text-align: center;
+    padding: 2px 0;
+}
+.cart-main .cart-left {
+    text-align: left;
+    padding: 10px 15px;
+    background-color: #efefef;
+    vertical-align: middle;
+}
+.view-history {
+    margin-top: 10px;
+    border: 1px solid #e6e6e6;
+}
+.view-history .title {
+    line-height: 37px;
+    font-size: 14px;
+    color: #666666;
+    padding: 0 15px;
+    background-color: #efefef;
+}
+.view-history .content {
+    padding: 5px 2px;
+}
+.btn-major span span, .btn-caution span span {
+    padding-left: 0;
+    padding-right: 15px;
+}
+.btn-caution span {
+    background: #dc4f45;
+    filter: none;
+    height: 21px;
+    line-height: 21px;
+}
+.btn-major span, .btn-caution span {
+    padding-left: 15px;
+}
+.btn-huge {
+    font-size: 133.33333%;
+}
+.btn-import, .btn-major, .btn-caution {
+    color: white;
+}
+btn {
+    border: 0 none;
+    background-color: transparent;
+    padding: 0;
+    font-size: 100.0%;
+    _overflow-y: hidden;
+}
+btn {
+    border: 0 none;
+    background-color: transparent;
+    padding: 0;
+    font-size: 100.0%;
+    _overflow-y: hidden;
+}
+#cart_container .btn-import span {
+    background: #dc4f45;
+    border: 0;
+    color: #fff;
+}
+.btn-link {
+    text-decoration: underline;
+    margin-right: 10px;
+    font-size: 100.0%;
+    color: #0563c3;
+}
+.cart-main .order-price .total b {
+    font: 24px/1.5 Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+.cart-main .order-price .price {
+    float:right;
+    text-align: left;
+    width: 150px;
+    padding-left: 5px;
+    color: #fe2000;
+}
+.cart-main .order-price .label {
+    float: left;
+    text-align: right;
+    width: 200px;
+    margin: 0 0 0 43px;
+}
+.cart-main .order-price .total {
+    line-height: 40px;
+}
+.cart-main .p-pic img {
+    max-width: 80px;
+    max-height: 80px;
+    vertical-align: middle;
+}
+fieldset, a img, iframe {
+    border: 0 none;
+}
+.cart-main {
+    border: 1px solid #e6e6e6;
+    table-layout: fixed;
+}
+.btn-caution span {
+    background: #dc4f45;
+    filter: none;
+    display: block;
+    height: 21px;
+    line-height: 21px;
+}
+.cart-main .p-info {
+    text-align: left;
+}
+.cart-main td {
+    line-height: 20px;
+    vertical-align: top;
+    text-align: center;
+    padding: 2px 0;
+}
+.cart-main .p-quantity a {
+    float: left;
+    width: 20px;
+    height: 21px;
+    overflow: hidden;
+    border: 1px solid #A9A9A9;
+    text-align: center;
+    font: 14px/22px simsun, serif;
+}
+.cart-main .p-quantity input {
+    float: left;
+    width: 30px;
+    height: 21px;
+    line-height: 21px;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #A9A9A9;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.btn-huge span span {
+    padding-left: 0;
+    padding-right: 30px;
+}
+.cart-main .cart-left, .cart-main thead, .cart-main .cart-right {
+    background-color: #d8d8d8;
+}
+.cart-main .cart-left{
+	padding: 18px 0;
+}
+.btn-flat span {
+    background-color: white;
+}
+

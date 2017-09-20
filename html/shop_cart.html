@@ -1,31 +1,169 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="../css/css.css"/>
-		<link rel="stylesheet" type="text/css" href="../css/shop_cart.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/css.css" />
+		<link rel="stylesheet" type="text/css" href="../css/shop_cart.css" />
 	</head>
+
 	<body>
-		<script src="../js/tools.js" type="text/javascript" charset="utf-8"></script>
 		<div class="header"></div>
 		<div class="content">
 			<div class="cart-title">
-   					 <h1>购物车 </h1>
-  				</div>
+				<h1>购物车 </h1>
+			</div>
+			<!--存在商品-->
+			<div id="hava_goods">
+				<div id="cart_steps" class="steps">
+					<tr>
+						<td class="step-item step-1 active"><span><q class="icon">P</q><i>1</i>购物车</span></td>
+						<td class="step-item step-2"><span><i>2</i>填写和提交订单信息</span></td>
+						<td class="step-item step-3"><span><i>3</i>成功提交订单</span></td>
+					</tr>
+				</div>
+				<table id="cart_main" class="cart-main" width="100%">
+					<colgroup>
+						<col class="col-1">
+						<col class="col-2">
+						<col class="col-3">
+						<col class="col-4">
+						<col class="col-5">
+						<col class="col-6">
+						<col class="col-7">
+						<col class="col-8">
+					</colgroup>
+					<thead>
+						<tr>
+							<th colspan="2">商品</th>
+							<th>销售价</th>
+							<th>数量</th>
+							<th>优惠金额</th>
+							<th>积分</th>
+							<th>小计</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<!-- 购物车条目 -->
+					<tbody class="cart-item">
+						<!-- 主商品 -->
+						<tr class="cart-product last" style="display: none;">
+							<td>
+								<input type="hidden" name="obj_type" value="goods">
+								<input type="hidden" name="goods_ident" value="goods_215_748">
+								<input type="hidden" name="goods_id" value="215">
+								<input type="hidden" name="min" value="1">
+								<input type="hidden" name="max" value="19792">
+								<input type="hidden" name="stock" value="19792">
+								<div class="p-pic">
+									<a href="/product-748" target="_blank"><img src="http://micamika-images.s3.mall.ekaidian.com/68/11/72/ff22def1f569b0710b45ed4d3d3b3ed4.jpg?1482732480#h" alt="摩天轮 Ferris Wheel" id="cart_img"></a>
+								</div>
+							</td>
+							<td class="p-info">
+								<div class="p-title">
+									<a target="_blank" href="/product-748" id="cart_name"></a>
+								</div>
+								<div class="p-spec">规格：2磅（仅北京配送）</div>
+								<!-- 赠品 -->
+								<!-- 商品促销 -->
+								<div class="p-promotion">
+									<ul>
+									</ul>
+								</div>
+							</td>
+							<td class="p-price">￥317.00</td>
+							<td>
+								<div class="p-quantity">
+									<a href="javascript:void(0);" class="btn-decrease">-</a>
+									<input type="text" name="modify_quantity[goods_215_748][quantity]" value="2">
+									<a href="javascript:void(0);" class="btn-increase">+</a>
+								</div>
+							</td>
+							<td class="p-discount">￥0.00</td>
+							<td class="p-integral">
+								634 </td>
+							<td class="p-subtotal">￥634.00</td>
+							<td class="p-action">
+								<a href="/passport-login" class="btn-fav">收藏</a>
+								<i>|</i>
+								<a href="javascript:void(0);" class="btn-delete">移除</a>
+							</td>
+						</tr>
+						
+						
+						
+						
+						<!-- 配件 -->
+					</tbody>
+
+					<!-- 订单赠品 -->
+					<tbody class="order-gift" id="order_gift" style="display:none;">
+						<tr class="cart-subtitle">
+							<th colspan="8">订单赠品</th>
+						</tr>
+					</tbody>
+
+					<tfoot>
+						<tr>
+							<td colspan="4">
+								<!-- 订单获得的优惠促销 -->
+								<div class="order-promotion" id="order_promotion" style="display:none;">
+									<h3><a href="javascript:void(0);" class="btn-collapse action-toggle">-</a>订单优惠</h3>
+									<ul class="content">
+									</ul>
+								</div>
+								<!-- 未享受到的优惠促销 -->
+								<div id="unused_promotion" class="unused-promotion" style="display:none;">
+									<h3><a href="javascript:void(0);" class="btn-collapse action-toggle">-</a>您还未享受到的优惠      <a href="javascript:void(0);" class="action-fororder"><em>凑单»</em></a>
+          </h3>
+									<ul class="content">
+									</ul>
+								</div>
+							</td>
+							<!-- 订单价格 -->
+							<td colspan="4" class="order-price" id="order_price">
+								<ul>
+									<li class="goods">
+										<span class="label"><em>商品总金额：</em></span>
+										<span class="price"><b>￥634.00</b></span>
+									</li>
+									<li class="discount">
+										<span class="label"><em>订单优惠金额：</em></span>
+										<span class="price"><b>￥0.00</b></span>
+									</li>
+									<li class="total">
+										<span class="label"><i>(订单可得积分<span class="subtotal-integral">634</span>)</i> <em>总金额：</em></span>
+										<span class="price"><b>￥634.00</b></span>
+									</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<!-- 按钮 -->
+							<td colspan="4" class="cart-left">
+								<button type="button" class="btn btn-flat action-clean"><span><span>清空购物车</span></span></button><button type="button" class="btn btn-caution action-fororder"><span><span>凑单商品</span></span></button> </td>
+							<td colspan="4" class="cart-right">
+								<a href="./" class="btn-link">继续购物</a>
+								<button type="submit" class="btn btn-import btn-huge action-settle" rel="_request"><span><span>下单结算<q class="f-icon">►</q></span></span></button> </td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+			<!--不存在商品-->
 			<div id="index_cart">
-				
-	  			<div id="cart_content">
- 				 <h2></h2>
- 				 <div id="cart_word"><b>您的购物车里还没有商品</b>，您可以：<br>
- 				 将<a href="/member-favorite">收藏夹</a>中的商品添加进来，或者去看看 <a href="/xiangmu/index.html">商城 »</a>
- 				 </div>
-  				</div>
+				<div id="cart_content">
+					<h2></h2>
+					<div id="cart_word"><b>您的购物车里还没有商品</b>，您可以：<br> 将
+						<a href="/member-favorite">收藏夹</a>中的商品添加进来，或者去看看
+						<a href="/xiangmu/index.html">商城 »</a>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="footer"></div>
-		
-		
-		<script src="../requirejs/require.js" data-main = "../js/shop_cart"></script>
+
+		<script src="../requirejs/require.js" data-main="../js/shop_cart"></script>
 	</body>
+
 </html>

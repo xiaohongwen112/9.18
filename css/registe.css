@@ -1,0 +1,208 @@
+ul, ol, menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+body,html{
+	height: 100%;
+}
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dd, fieldset, form, input, select, textarea, button, figure {
+    margin: 0;
+        font-family: Lucida Grande, Lucida Sans Unicode, Tahoma, Helvetica, Arial, Hiragino Sans GB, sans-serif;
+}
+#signup li.login a:hover{
+	color: #000;
+}
+#signup li.login a{
+	color: #000;
+}
+#signup li.registe a:hover{
+	color: #fff;
+}
+#signup li.registe a{
+	color: #fff;
+}
+.mask{
+	overflow: hidden;
+	width: 100%; 
+	height: 3000px; 
+	display: block; 
+	z-index: 100001;
+	background: rgba(119, 119, 119, 0.7);
+/*	 opacity: 0.7; */
+	 visibility: visible;
+}
+#registe_main{
+	width:800px;
+	height: 3000px;
+	margin:0 auto;
+}
+#registe_con{
+	position: relative;
+	width:570px;
+	height:348px;
+	background: #fff;
+	margin: 29px 109px auto;
+}
+.registe:active{
+	
+}
+#signup{
+	border-bottom: 2px solid #636363;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+#signup ul{
+	height: 33px;
+   
+    line-height: 33px;
+}
+#signup ul li{
+	float: left;
+    color: #fff;
+    margin-right: 10px;
+    font-size: 133.33333%;
+	display: block;
+    padding-left: 18px;
+    padding-right: 18px;
+	cursor: pointer;
+}
+/*ç*/
+#signDown ul{
+	 width: 550px;
+    margin: 0;
+}
+#signDown ul li{
+	font-size: 14px;
+    padding: 13px 19px 13px 0px;
+    color: #666;
+}
+#signDown ul li i{
+	color: red;
+} 
+#signDown input{
+	width: 288px;
+    height: 26px;
+    line-height: 26px;
+    padding: 1px 4px;
+    font-size: 14px;
+}
+#signDown  li#li_one span{
+	padding-left: 25px;
+}
+#signDown  li#li_two span{
+	padding-left: 55px;
+}
+#signDown  li#li_two{
+	position: relative;
+}
+
+#signDown input.remember{
+	width: 27px;
+    height: 16px;
+    margin-left: 20px;
+}      
+#close{
+	position: absolute;
+	top: 8px;
+	right: 10px;
+	width: 14px;
+	height: 14px;
+	cursor: pointer;
+	background: url(../img/6CD45551-9021-4F7D-A431-287D1037B288.png) no-repeat;
+}	
+#close:hover{
+	background: url(../img/8A7A475E-C597-4F2E-B3AD-DD6A19C48C91.png)  no-repeat;
+	top:10px;
+	right: 9px;
+}
+#signDown  li#li_three label:first-child{
+	padding-left: 28px;
+}
+#signDown  li#li_mi a{
+	color: #0563c3;
+    cursor: pointer;
+}
+#signDown  li#li_three{
+	 margin-top: 8px;
+}
+#registe_bnt{
+	background:#fc5910;
+	outline: none;
+	border: none;
+	width: 80px;
+	height: 40px;
+	font-size:16px;
+	color: #fff;
+}
+a#forget_key{
+	color:#0563c3;
+	margin-left: 3px;
+    margin-right: 3px;
+}
+#signDown li#li_four{
+	padding-left: 100px;
+}
+#signDown {
+	border-bottom: 1px dotted #cccccc;;
+}
+#qq_and_more{
+	
+}
+#qq_and_more h1{
+	width: 300px;
+	height: 20px;
+    line-height: 20px;
+    margin: 10px 0 0 0;
+    padding-left: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin: 39px 0px 0 29px;
+}
+#qq_and_more ul{
+	width: 300px;
+    height: 100px;
+    float: left;
+    margin-left: 136px;
+    margin-top: 5px;
+}
+#qq_and_more ul li{
+	float: left;
+    margin: 4px;
+    cursor: pointer;
+}
+#signDown li#li_mi{
+	margin-left: 76px;
+}
+#determine{
+	position: absolute;
+    top: 15px;
+    right: 31px;
+    width: 110px;
+    height: 40px;
+}
+.progress {
+	margin-top: 2px;
+    display: block;
+    background-color: #dddddd;
+    width: 50%;
+    height: 8px;
+    line-height: 8px;
+    font-size: 7px;
+    overflow: hidden;
+    clear: both;
+}
+.percent {
+    display: inline-block;
+    height: 8px;
+    line-height: 8px;
+    font-size: 7px;
+}
+li.login{
+	background: #eee;
+}
+li.registe{
+	background: #666;
+}

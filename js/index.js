@@ -1,14 +1,29 @@
 require(["config"],function(){
-	require(["jquery","reg"],function(a,b){
-	
-
-
+	require(["jquery","login"],function(a,b){
+	console.log(b);
 $(function(){
+	
+//	
+//	(function reg_index(){
+////	$(".header").load("html/include/header.html", function(data){
+////		$(data).find("#into_login").show();
+////	});
+//	$.ajax("html/include/header.html").done(function(data){
+//		$(data).appendTo(".header");
+//		$.ajax("html/login.html").done(function(data){
+//			$("#into_login").html(data);
+//		});
+//		$(".a_right_cancel").click(function(){
+//			$("#into_login").show();
+//		});
+//		$("#into_login").on("click", "#close", function(){
+//			$("#into_login").hide();
+//		})
+//	});
+//	$(".footer").load("html/include/footer.html");
+//	}());
+	
 	small_carouse();
-	(function reg_index(){
-	$(".header").load("html/include/header.html");
-	$(".footer").load("html/include/footer.html");
-	}())
 	//小轮播
 	function small_carouse(){
 	var two_img=$("#all_img dl"),
@@ -55,7 +70,7 @@ $(function(){
 		var first =two_img.eq(0).clone(true),
 			last=two_img.last().clone(true);
 			$("#img ul").append(first).prepend(last);
-				var len=4;
+				var len=5	;
 				$("#img ul").width(imgwidth*len).css("left",-imgwidth);
 				$("#next").click(move);//下一张按钮
 				$("#prev").click(function(){

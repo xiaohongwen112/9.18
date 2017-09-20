@@ -194,7 +194,6 @@ a:hover span{
     color: #dc4f45;
     font: normal 16px microsoft yahei;
     display: block;
-        margin: 20px 0 0 0;
 }
 .con_left .all_goods dt{
 	    vertical-align: middle
@@ -255,10 +254,11 @@ a:hover span{
     white-space: nowrap;
     vertical-align: middle;
     margin-left: 15px;
+    height: 20px;
+    margin-top: 28px;
 }
 .con_left .all_goods dd a.shop_cart>span>span{
 	font-size: 12px;
-	margin-top:30px ;
 	height: 18px;
     line-height: 18px;
     border: 0;
